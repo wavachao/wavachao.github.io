@@ -100,13 +100,27 @@ description: Wu Huachao is a computer vision researcher and perception engineer 
 </section>
 
 <section class="writing-preview">
-  <div class="site-shell">
-    <div class="section-heading inverted">
-      <p class="section-number">03</p>
-      <div>
-        <p class="page-kicker">Writing</p>
-        <h2>Notes from the workbench.</h2>
+  <div class="site-shell writing-layout">
+    <div class="writing-intro">
+      <div class="writing-heading">
+        <p class="section-number">03</p>
+        <div>
+          <p class="page-kicker">Writing</p>
+          <h2>Notes from the workbench.</h2>
+        </div>
       </div>
+
+      <p class="writing-deck">
+        Implementation notes, experiments, and the details worth keeping after
+        the work is done.
+      </p>
+
+      <dl class="writing-facts">
+        <div><dt>Archive</dt><dd>{{ site.data.legacy_posts | size }} entries</dd></div>
+        <div><dt>Range</dt><dd>2020—2021</dd></div>
+        <div><dt>Subjects</dt><dd>C++ · Linux · CV</dd></div>
+      </dl>
+
       <a class="section-action" href="/blog/">Visit the blog →</a>
     </div>
 
@@ -119,7 +133,7 @@ description: Wu Huachao is a computer vision researcher and perception engineer 
           <i>↗</i>
         </a>
       {% endfor %}
-      {% for post in site.data.legacy_posts limit:3 %}
+      {% for post in site.data.legacy_posts limit:6 %}
         <a href="{{ post.path }}">
           <time>{{ post.date | replace: "-", "." }}</time>
           <span>{{ post.category }}</span>

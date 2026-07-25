@@ -20,19 +20,19 @@ legacy: true
 <p>3.获取公钥</p>
 <p>鼠标右键，选择Git Bash here，输入<code>ssh-keygen -t rsa -C “邮箱”</code></p>
 <p>如图：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190822203737221.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190822203737221.png" alt="在这里插入图片描述"></p>
 <p>我的已经安装好了，遇到停顿一路回车就好了。</p>
 <p>产生的公钥在C:/用户(user)/admin(每个电脑不一样的相当于电脑的username)/.ssh/id_rsa.pub</p>
 <p>复制下来.。</p>
 <p>或者直接用<code>cat ~/.ssh/id_rsa.pub</code>查看。</p>
 <p>可用<code>ssh -T git@github.com</code>查看是否成功生成公钥。</p>
 <p>4.上传公钥</p>
-<p><img src="https://img-blog.csdnimg.cn/20190822204532424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190822204532424.png" alt="在这里插入图片描述"></p>
 <p>点击右上角的头像，点击settings</p>
-<p><img src="https://img-blog.csdnimg.cn/20190822204712208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190822204712208.png" alt="在这里插入图片描述"></p>
 <p>点击SSH and GPG keys</p>
 <p>添加SSH keys，不需要添加GPG keys</p>
-<p><img src="https://img-blog.csdnimg.cn/20190822205007546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190822205007546.png" alt="在这里插入图片描述"></p>
 <p>如图即可。</p>
 <p>gitee一样的步骤。</p>
 <p>5.绑定用户名跟邮箱</p>
@@ -50,7 +50,7 @@ legacy: true
 <span class="token function">git</span> remote add origin 仓库地址（如下图）
 
 <span class="token function">git</span> pull origin master</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20190822210452256.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190822210452256.png" alt="在这里插入图片描述"></p>
 <p>然后现在就可以上传代码到github上面了。</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> add <span class="token keyword">.</span> 
 
@@ -74,7 +74,7 @@ legacy: true
 <p>可以看到前面已经有内容了，那是上传到github的配置。</p>
 <p>然后按ESC键，多按几次没事的，按<code>Shift+:wq</code></p>
 <p>vim编辑器会在最下面一行显示如下内容，按Enter就可以了</p>
-<p><img src="https://img-blog.csdnimg.cn/20190822211814756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190822211814756.png" alt="在这里插入图片描述"></p>
 <p>最后就可以上传代码了。</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> add <span class="token keyword">.</span>
 <span class="token function">git</span> commit -m <span class="token string">"理由"</span></code></pre>

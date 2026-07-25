@@ -99,7 +99,7 @@ legacy: true
   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
 <p>程序运行可以看到，的确在第六秒发送了信号。</p>
-<p><img src="https://static01.imgkr.com/temp/c8b7d4caf04f4350aea49d16ad958021.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-temp-c8b7d4caf04f4350aea49d16ad958021.png"></p>
 <h3 id="Ⅴ-捕获信号函数"><a href="#Ⅴ-捕获信号函数" class="headerlink" title="Ⅴ. 捕获信号函数"></a>Ⅴ. 捕获信号函数</h3><p>当有信号的时候调用函数。</p>
 <p><code>man 2 signal</code></p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;signal.h></span></span>
@@ -175,7 +175,7 @@ sighandler_t <span class="token function">signal</span><span class="token punctu
   <span class="token punctuation">}</span>
   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
-<p><img src="https://static01.imgkr.com/temp/da7e159158f146e895f7bbcbf183ecaf.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-temp-da7e159158f146e895f7bbcbf183ecaf.png"></p>
 <p>  通过运行结果，我们可以看到，程序的确是按照我们的预期跑的，5秒后闹钟产生，之后每隔3秒发送一次信号。</p>
 <h3 id="Ⅶ-信号集函数"><a href="#Ⅶ-信号集函数" class="headerlink" title="Ⅶ. 信号集函数"></a>Ⅶ. 信号集函数</h3><p><code>man 3 sigemptyset</code></p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;signal.h></span></span>
@@ -252,8 +252,8 @@ sighandler_t <span class="token function">signal</span><span class="token punctu
   <span class="token punctuation">}</span>
   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
-<p><img src="https://static01.imgkr.com/temp/b7c7a62dd8c74443bfd06284f4a5c303.png"></p>
-<p><img src="https://static01.imgkr.com/temp/ac2af8418636437ab490cff7baaaa2b1.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-temp-b7c7a62dd8c74443bfd06284f4a5c303.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-temp-ac2af8418636437ab490cff7baaaa2b1.png"></p>
 <p>通过<code>ps -ajx</code>可以看到，的确杀死了子进程。</p>
 <h2 id="二-守护进程"><a href="#二-守护进程" class="headerlink" title="二. 守护进程"></a>二. 守护进程</h2><p>个人理解守护进程，<strong>不用占用终端，程序可以一直进行下去</strong> ，守护进程一般以d结尾，linux下有systemd系统工具来启动守护进程。</p>
 <p>创建守护进程步骤：</p>
@@ -313,8 +313,8 @@ sighandler_t <span class="token function">signal</span><span class="token punctu
   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">// 每隔一秒打印一个数字，为了方便，没有关闭文件描述符</span></code></pre>
-<p><img src="https://static01.imgkr.com/temp/8fbe402a77164e009c426dbfc9da45db.png"></p>
-<p><img src="https://static01.imgkr.com/temp/7052c334ff7840f78b30112f42513829.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-temp-8fbe402a77164e009c426dbfc9da45db.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-temp-7052c334ff7840f78b30112f42513829.png"></p>
 <p>可以看到，守护进程创建成功。</p>
 <h2 id="三-总结"><a href="#三-总结" class="headerlink" title="三. 总结"></a>三. 总结</h2><p>本来还打算用信号和线程写一个睡眠排序，发现好像有点困难，就放弃了。</p>
 <p>linux下的进程就算粗略学习完了，绝知此事要躬行，还有很多要学习的。</p>

@@ -25,7 +25,7 @@ legacy: true
 <p>换源网上很多教程，我这里简单讲下：</p>
 <p>找到 <code>\msys64\etc\pacman.d</code>（安装目录下的）：</p>
 <p>如图：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190820101545412.png" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190820101545412.png" alt="在这里插入图片描述"></p>
 <p>对于 <code>mirrorlist.msys</code>，贴上如下内容：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">##</span>
 <span class="token comment" spellcheck="true">## MSYS2 repository mirrorlist</span>
@@ -73,17 +73,17 @@ pacman -S  mingw-w64-x86_64-toolchain</code></pre>
 <p>安装成功后，在你的 <code>msys2</code> 的安装路径下会有 <code>mingw64</code> 文件夹的。</p>
 <p>进去找到bin文件夹，复制整个bin文件夹的目录：<code>D:\msys64\mingw64\bin</code></p>
 <p>找到我的电脑（此电脑），右键属性：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190820103721186.png" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190820103721186.png" alt="在这里插入图片描述"></p>
 <p>点击高级系统设置：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190820103800170.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190820103800170.png" alt="在这里插入图片描述"></p>
 <p>点击环境变量，进去之后发现有个用户的变量，还有一个系统变量，简单讲就是：<strong>系统环境变量，对所有用户起作用,而用户环境变量只对当前用户起作用。</strong> </p>
 <p>一般添加系统环境变量，找到 <code>Path</code>，新建，把刚刚复制的路径粘贴进去就好了。</p>
 <p>然后检查是否成功，<code>win+r</code>，输入 <code>cmd</code>，键入 <code>g++ -v</code></p>
-<p><img src="https://img-blog.csdnimg.cn/20190820104430821.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190820104430821.png" alt="在这里插入图片描述"></p>
 <p>如上显示就是成功了。</p>
 <p>如果是直接安装的 <code>mingw64</code></p>
 <p>则是这样的：</p>
-<p><img src="https://img-blog.csdnimg.cn/20191215173208208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20191215173208208.png" alt="在这里插入图片描述"></p>
 <h3 id="安装gdb调试器"><a href="#安装gdb调试器" class="headerlink" title="安装gdb调试器"></a>安装gdb调试器</h3><p>一般用 <code>msys2</code> 安装的 <code>mingw64</code> 不带 <code>gdb</code></p>
 <p>用<code>pacman -S gdb</code>就可以了。</p>
 </div>

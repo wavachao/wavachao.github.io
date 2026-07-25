@@ -86,7 +86,7 @@ MOV R7, R5, LSL #2    ;let R7 = R5 * 4 = (R5 << 2)
 ;左移一位×2,右移一位÷2</code></pre>
 <h4 id="带有-S-的指令"><a href="#带有-S-的指令" class="headerlink" title="带有{S}的指令"></a>带有{S}的指令</h4><p>Example3：</p>
 <p>请回顾下CPSR的格式</p>
-<p><img src="https://i.loli.net/2020/03/18/ypGErWXQstfHBSi.png" alt="当前程序状态寄存器"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-ypGErWXQstfHBSi.png" alt="当前程序状态寄存器"></p>
 <pre class=" language-assembly"><code class="language-assembly">CPSR = nzcvqiFt_USER
 R0 = 0X00000000
 R1 = 0X80000004
@@ -363,7 +363,7 @@ LDMIA R0!, {R1-R3}    ;不是R1减去R3,是R1到R3中间的寄存器
 ;R2 = 0x00000002
 ;R3 = 0x00000003</code></pre>
 <p>Example4：</p>
-<p><img src="https://i.loli.net/2020/03/19/rdCbxORFeEc7Jy5.png" alt="地址图"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-rdCbxORFeEc7Jy5.png" alt="地址图"></p>
 <pre class=" language-assembly"><code class="language-assembly">;R9 points to start of source data
 ;R10 points to start of destination data
 ;R11 points to end of the source

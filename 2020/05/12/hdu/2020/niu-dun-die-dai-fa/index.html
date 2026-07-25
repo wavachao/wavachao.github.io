@@ -16,7 +16,7 @@ legacy: true
 <p>当然，牛顿迭代法也是已知已知的实现求方根最快的方法之一。</p>
 <p>大家都知道，五次方程无根式解，但是用途却很多。</p>
 <p>而牛顿迭代法的出现正好解决了这个问题。</p>
-<p>牛顿迭代法就是不断求导数，请看下图：<br><img src="https://img-blog.csdnimg.cn/201908232007000.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>大致推导：<br><img src="https://img-blog.csdnimg.cn/20190823201506861.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI2MjEy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>牛顿迭代法求方根：</p>
+<p>牛顿迭代法就是不断求导数，请看下图：<br><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-201908232007000.jpg" alt="在这里插入图片描述"><br>大致推导：<br><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-20190823201506861.jpg" alt="在这里插入图片描述"><br>牛顿迭代法求方根：</p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">mySqrt</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">long</span> r <span class="token operator">=</span> x<span class="token punctuation">;</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span>r <span class="token operator">*</span> r <span class="token operator">></span> x<span class="token punctuation">)</span>

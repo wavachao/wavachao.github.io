@@ -57,6 +57,11 @@ The 132 existing Hexo articles keep their original URLs, but their bodies now
 use the shared Jekyll article layout. Their archive metadata is stored in
 `_data/legacy_posts.yml`.
 
+Legacy article images are self-hosted in `wavachao/blog-img`. The original
+external URL mapping is preserved in that repository at
+`legacy/sources.json`, including the two architecture diagrams recreated after
+their imgkr originals became unavailable.
+
 The migration utilities are:
 
 ```bash

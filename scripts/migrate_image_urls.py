@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
@@ -30,6 +31,22 @@ def github_url(source_url: str) -> str:
     return f"{RAW_BASE}{quote(filename)}"
 
 
+def manifest_mapping(manifest_path: Path | None) -> dict[str, str]:
+    if not manifest_path:
+        return {}
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    mapping: dict[str, str] = {}
+    for asset in manifest["assets"]:
+        if not asset.get("target"):
+            continue
+        new_url = f"{RAW_BASE}{quote(str(asset['target']), safe='/')}"
+        mapping[str(asset["source"])] = new_url
+        for previous_target in asset.get("previous_targets", []):
+            old_url = f"{RAW_BASE}{quote(str(previous_target), safe='/')}"
+            mapping[old_url] = new_url
+    return mapping
+
+
 def article_paths() -> list[Path]:
     posts = yaml.safe_load(POSTS_DATA.read_text(encoding="utf-8"))
     return [ROOT / str(post["path"]).lstrip("/") / "index.html" for post in posts]
@@ -49,9 +66,15 @@ def main() -> None:
         type=Path,
         help="Optional blog-img checkout used to verify every replacement target.",
     )
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        help="Optional blog-img legacy/sources.json mapping for external images.",
+    )
     args = parser.parse_args()
 
     assets_dir = args.assets_dir.resolve() if args.assets_dir else None
+    external_urls = manifest_mapping(args.manifest)
     changed_files = 0
     replacements = 0
     missing_assets: set[str] = set()
@@ -67,10 +90,23 @@ def main() -> None:
                     missing_assets.add(filename)
 
         updated, count = LEGACY_URL.subn(lambda match: github_url(match.group()), source)
-        if count:
+        replacements += count
+
+        for old_url, new_url in external_urls.items():
+            external_count = updated.count(old_url)
+            if not external_count:
+                continue
+            updated = updated.replace(old_url, new_url)
+            replacements += external_count
+
+            if assets_dir:
+                target = unquote(new_url.removeprefix(RAW_BASE))
+                if not (assets_dir / target).is_file():
+                    missing_assets.add(target)
+
+        if updated != source:
             content_file.write_text(updated, encoding="utf-8")
             changed_files += 1
-            replacements += count
 
     if missing_assets:
         names = ", ".join(sorted(missing_assets))

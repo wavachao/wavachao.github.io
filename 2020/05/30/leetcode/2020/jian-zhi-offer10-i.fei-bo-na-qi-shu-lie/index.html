@@ -39,7 +39,7 @@ legacy: true
 </ul>
 <h3 id="Ⅱ-题目分析"><a href="#Ⅱ-题目分析" class="headerlink" title="Ⅱ. 题目分析"></a>Ⅱ. 题目分析</h3><p>此题一般都当作动态规划(Dynamic programming)入门题。</p>
 <h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><p>我们可以直接用递归来解此题， 应该会超时。</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS84MjU2ZmQwZi0yMzRiLTQwNjYtYmY1Mi1hNmRmODZkMDU0OWEucG5n?x-oss-process=image/format,png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-cache-8256fd0f-234b-4066-bf52-a6df86d0549a.png"></p>
 <p>我们看到，每一次递归都产生了大量的重复计算值，而这些值理论上我们只要计算一次。</p>
 <p>时间复杂度$O(2^n)$，空间复杂度$O(n)$</p>
 <h4 id="记忆保存"><a href="#记忆保存" class="headerlink" title="记忆保存"></a>记忆保存</h4><p>我们用一个数组保存，计算过的每个值，遇到了直接用就好了。</p>
@@ -97,7 +97,7 @@ legacy: true
         <span class="token keyword">return</span> vec<span class="token punctuation">[</span>n<span class="token punctuation">]</span></code></pre>
 <p>记忆保存和DP时间复杂度和空间复杂度都是$O(n)$</p>
 <h2 id="Ⅲ-优化"><a href="#Ⅲ-优化" class="headerlink" title="Ⅲ. 优化"></a>Ⅲ. 优化</h2><p>我们可不可以把空间复杂度优化成$O(1)$</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS80M2Q2YTNiMy01OWMyLTQ2YWEtYTY1OC1mMzU4OWM1ODQ5YTQuZ2lm"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-cache-43d6a3b3-59c2-46aa-a658-f3589c5849a4.gif"></p>
 <p>因为C++可能会导致溢出，所以我们要找个变量。</p>
 <ul>
 <li>c++代码</li>

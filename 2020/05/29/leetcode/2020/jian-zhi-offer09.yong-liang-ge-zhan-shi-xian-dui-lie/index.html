@@ -34,7 +34,7 @@ legacy: true
 <li>队列，先进先出。</li>
 </ol>
 <h3 id="Ⅱ-题目分析"><a href="#Ⅱ-题目分析" class="headerlink" title="Ⅱ. 题目分析"></a>Ⅱ. 题目分析</h3><p>我们设计两个栈，把其中一个栈的元素依次压出第二个栈，再把第二个栈的内容依次压入第一个栈，由于栈的“先进后出”性质，这时我们按照栈的方法操作第一个栈，就可以实现队列的“先进先出”功能了。</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8yMjZiYjM1My02MWY0LTQwNzAtODhkNi1hODVkOTFlMWE0ZTUuZ2lm"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-cache-226bb353-61f4-4070-88d6-a85d91e1a4e5.gif"></p>
 <h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ul>
 <li>在插入元素方法中<ol>
 <li>如果，第一个栈不为空，把第一个栈的所有元素压入第二个栈</li>
@@ -126,7 +126,7 @@ legacy: true
 </ul>
 <h3 id="Ⅲ-优化"><a href="#Ⅲ-优化" class="headerlink" title="Ⅲ. 优化"></a>Ⅲ. 优化</h3><p>上面的代码尽管插入元素的时间复杂度已经是$O(N)$了，但是跑起来的效率相对比较慢。</p>
 <p>通过分析我们知道，每次我们插入元素的时候，都要把栈1的所有元素都压入栈2，再把栈2的元素压入栈1，能不能优化下。</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8wYWE0ZWIwNC03Y2EwLTQ4ZWQtOTIzMi1jNjE0N2NjODM4ZjUuZ2lm"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/csdn-cache-0aa4eb04-7ca0-48ed-9232-c6147cc838f5.gif"></p>
 <p>具体问题具体分析，结果不是最优，肯定还有好的方法。</p>
 <ul>
 <li>c++代码</li>

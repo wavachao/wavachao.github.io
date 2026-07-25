@@ -17,7 +17,7 @@ legacy: true
 <h3 id="一-keil简单介绍"><a href="#一-keil简单介绍" class="headerlink" title="一. keil简单介绍"></a>一. keil简单介绍</h3><p><strong>Keil</strong> 提供了包括C<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BC%96%E8%AF%91%E5%99%A8/8853067">编译器</a>、宏汇编、链接器、库管理和一个功能强大的仿真调试器等在内的完整开发方案，通过一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/298524">集成开发环境</a>（μVision）将这些部分组合在一起。</p>
 <p>更多请戳 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Keil">百度百科</a></p>
 <h3 id="二-安装"><a href="#二-安装" class="headerlink" title="二. 安装"></a>二. 安装</h3><p><a target="_blank" rel="noopener" href="https://www.keil.com/download/product/">Download Products</a></p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/57af1f52-e355-42a6-b6cd-5bfce14aacac.png" alt="keil产品"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-57af1f52-e355-42a6-b6cd-5bfce14aacac.png" alt="keil产品"></p>
 <p><strong>MDK-Arm(Microcontroller Development Kit)</strong> </p>
 <ul>
 <li><strong>MDK</strong> 的设备数据库中有很多厂商的芯片，是专为微控制器开发的工具，为满足基于 <strong>MCU</strong> 进行嵌入式软件开发的工程师需求而设计，支持 <strong>ARM7，ARM9，Cortex-M4/M3/M1，Cortex-R0/R3/R4</strong> 等 <strong>ARM</strong> 微控制器内核。</li>
@@ -38,44 +38,44 @@ legacy: true
 <h3 id="三-使用教程"><a href="#三-使用教程" class="headerlink" title="三. 使用教程"></a>三. 使用教程</h3><h4 id="1-建立文件"><a href="#1-建立文件" class="headerlink" title="1. 建立文件"></a>1. 建立文件</h4><p>在你找的找的到的任何地方建立一个新的文件夹，专门用来保存 <strong>keil</strong> 工程文件。比如 <strong>D://MCU/</strong> </p>
 <h4 id="2-建立工程文件"><a href="#2-建立工程文件" class="headerlink" title="2. 建立工程文件"></a>2. 建立工程文件</h4><p>在 <strong>MCU</strong> 文件里建立再建立一个文件夹，作为 <strong>keil</strong> 工程文件，比如 <strong>D://MCU/experiment1/</strong> </p>
 <h4 id="3-建立工程"><a href="#3-建立工程" class="headerlink" title="3. 建立工程"></a>3. 建立工程</h4><p>打开桌面的 <strong>keil uVision</strong> </p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/b179aa98-23ab-40f0-9ef0-30c73bfccb81.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-b179aa98-23ab-40f0-9ef0-30c73bfccb81.png"></p>
 <ol start="4">
 <li>点击工具栏的 <strong>Project</strong> ，选择 <strong>New uVision Project</strong> </li>
 </ol>
-<p><img src="https://imgkr.cn-bj.ufileos.com/261b2a09-c4a6-4d6a-8246-7cc46b584159.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-261b2a09-c4a6-4d6a-8246-7cc46b584159.png"></p>
 <p>定位到刚刚建立的文件夹下面 <strong>D://MCU/experiment</strong> </p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/e4c294eb-7574-4da2-aebf-c2f5bf06b896.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-e4c294eb-7574-4da2-aebf-c2f5bf06b896.png"></p>
 <p>①是当前路径，我们在②处填上我们要建立的 <strong>keil</strong> 工程名字： <strong>experiment1</strong>，点击③保存。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/8f7ea78e-1052-45c2-8e34-691017023f79.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-8f7ea78e-1052-45c2-8e34-691017023f79.png"></p>
 <p>选择 <strong>Atmel</strong> ，点击前面的 <strong>+</strong> 号。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/341976cb-3aa3-4803-84b3-3002c56bd33d.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-341976cb-3aa3-4803-84b3-3002c56bd33d.png"></p>
 <p>找到 <strong>AT89C51</strong> 点击②， <strong>OK</strong>。</p>
 <p>有可能会出来一个弹窗，点否就行了。</p>
 <h4 id="4-建立源文件"><a href="#4-建立源文件" class="headerlink" title="4. 建立源文件"></a>4. 建立源文件</h4><p>找到刚刚建立的 <strong>D://MCU/experiment</strong> </p>
 <p>右键，建立文本文档，双击改名字，记得打开文件后缀名。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/dd735005-111b-49dd-bb46-a5f39e35afb5.png"></p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/442d0677-9881-4717-9721-70c42e9b38a0.png"></p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/408eaf89-6d6a-4037-8b4a-a9aed83c564a.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-dd735005-111b-49dd-bb46-a5f39e35afb5.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-442d0677-9881-4717-9721-70c42e9b38a0.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-408eaf89-6d6a-4037-8b4a-a9aed83c564a.png"></p>
 <p>最后得到 <strong>C</strong> 语言源文件。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/02dc2064-83a9-4ca7-8dd8-4ee740d5a00c.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-02dc2064-83a9-4ca7-8dd8-4ee740d5a00c.png"></p>
 <h4 id="5-添加源文件"><a href="#5-添加源文件" class="headerlink" title="5. 添加源文件"></a>5. 添加源文件</h4><p>打开 <strong>keil uVision</strong> </p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/eebdad8b-6833-4cbf-8e4c-930ffa85d663.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-eebdad8b-6833-4cbf-8e4c-930ffa85d663.png"></p>
 <p>右键，<strong>Source Group 1</strong> ，选择刚刚的 <strong>C语言</strong> 源文件。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/3fe06aea-5390-4e75-86ae-4e934835a4e2.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-3fe06aea-5390-4e75-86ae-4e934835a4e2.png"></p>
 <p>点击②添加，③关闭。</p>
 <p>这时 <strong>Source Group 1</strong> 多了个 <strong>+</strong> </p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/55a4d50d-5345-47c0-a2f4-d8219db2f540.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-55a4d50d-5345-47c0-a2f4-d8219db2f540.png"></p>
 <p>展开，双击源文件，就可以编写源文件了。</p>
 <h4 id="6-生成hex二进制文件"><a href="#6-生成hex二进制文件" class="headerlink" title="6. 生成hex二进制文件"></a>6. 生成hex二进制文件</h4><p>编写好源文件后，右键 <strong>Target 1</strong> ，选择图中的 <strong>Options for Target 1…</strong> 。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/cc69eddb-5bf6-4b1c-bf71-72023d406c9c.png"></p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/0d87fc0e-4b36-4ac0-ab07-6ba60081f184.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-cc69eddb-5bf6-4b1c-bf71-72023d406c9c.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-0d87fc0e-4b36-4ac0-ab07-6ba60081f184.png"></p>
 <p>选择 <strong>Output</strong> ，把 <strong>Create HEX File</strong> 打上 <strong><em>√</em></strong> ，默认是没有 <strong><em>√</em></strong> 的。然后点击OK，即可。</p>
 <h4 id="7-编译文件"><a href="#7-编译文件" class="headerlink" title="7. 编译文件"></a>7. 编译文件</h4><p>找到工具栏</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/4965f55a-de21-4360-a129-d07a6d6bab7a.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-4965f55a-de21-4360-a129-d07a6d6bab7a.png"></p>
 <p>①是转换和编译按钮，一般通过①的第一个按钮检查自己的代码有没有错，第二个按钮生成HEX文件。</p>
 <p>②是调试按钮，设置好段点后，就可以对代码进行调试了。</p>
 <h4 id="8-检查是否生成HEX文件"><a href="#8-检查是否生成HEX文件" class="headerlink" title="8. 检查是否生成HEX文件"></a>8. 检查是否生成HEX文件</h4><p>如果代码没有报错。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/98fc074e-6583-4558-b7c6-5d18ecffa5be.png"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-98fc074e-6583-4558-b7c6-5d18ecffa5be.png"></p>
 <p>打开建立的文件 <strong>D://MCU/experiment/</strong> 这是我们会看到该目录下有个 <strong>experiment.hex</strong> 文件。</p>
 <p>在 <strong>ISIS</strong> 中双击 <strong>AT89C51</strong> 芯片，找到这个 <strong>experiment.hex</strong> 文件，即可进行仿真了。</p>
 <h3 id="四-总结"><a href="#四-总结" class="headerlink" title="四. 总结"></a>四. 总结</h3><p>多练习，熟能生巧，不熟悉就谈不上进步。</p>

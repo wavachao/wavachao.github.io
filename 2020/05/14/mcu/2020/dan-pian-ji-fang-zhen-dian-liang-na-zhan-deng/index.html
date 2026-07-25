@@ -32,7 +32,7 @@ legacy: true
 <li> <strong>XTAL2(Pin20)</strong> ：片内振荡电路的输出端</li>
 </ul>
 <p>晶振电路：</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/5ce44b98-7a93-4e1f-8b3f-117c714f1906.png" alt="晶振电路"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-5ce44b98-7a93-4e1f-8b3f-117c714f1906.png" alt="晶振电路"></p>
 <h4 id="控制引脚"><a href="#控制引脚" class="headerlink" title="控制引脚"></a>控制引脚</h4><ul>
 <li> <strong>$\overline{EA}$(Pin31)</strong> ：程序存储器的内外部选通，接低电平从外部程序存储器读指令，如果接高电平则从内部程序存储器读指令。</li>
 </ul>
@@ -46,7 +46,7 @@ legacy: true
 </li>
 </ul>
 <p>这就意味着 <strong>P1 ~ P3</strong> 都可以控制二极管！</p>
-<h3 id="电路图"><a href="#电路图" class="headerlink" title="电路图"></a>电路图</h3><p><img src="https://imgkr.cn-bj.ufileos.com/4b76c18b-c187-4406-a346-3b59e9c58905.png" alt="电路图"></p>
+<h3 id="电路图"><a href="#电路图" class="headerlink" title="电路图"></a>电路图</h3><p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-4b76c18b-c187-4406-a346-3b59e9c58905.png" alt="电路图"></p>
 <p>通过实验原理图，我们可以得出，发光二极管共阳极，所以P1.0 ~ P1.7口是低电平时才能点亮二极管。</p>
 <h3 id="汇编代码"><a href="#汇编代码" class="headerlink" title="汇编代码"></a>汇编代码</h3><pre class=" language-assembly"><code class="language-assembly">    ORG 0000H
     LJMP    START                          

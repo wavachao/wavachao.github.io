@@ -14,7 +14,7 @@ legacy: true
 {% raw %}
 <div class="legacy-article-content cjk-supported">
 <h3 id="一-Linux进程间通信"><a href="#一-Linux进程间通信" class="headerlink" title="一. Linux进程间通信"></a>一. Linux进程间通信</h3><h4 id="Ⅰ-管道函数"><a href="#Ⅰ-管道函数" class="headerlink" title="Ⅰ. 管道函数"></a>Ⅰ. 管道函数</h4><p>管道是有大小的，通过<code>ulimit -a</code>查看管道大小</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/5b9f0c3d-2ed4-470f-9400-6e727c54dfb1.png" alt="管道"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-5b9f0c3d-2ed4-470f-9400-6e727c54dfb1.png" alt="管道"></p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">man</span> 2 pipe
 <span class="token comment" spellcheck="true">#include &lt;unistd.h></span>
 int pipe<span class="token punctuation">(</span>int pipefd<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
@@ -236,7 +236,7 @@ int pipe<span class="token punctuation">(</span>int pipefd<span class="token pun
 <span class="token punctuation">}</span></code></pre>
 <h4 id="Ⅲ-mmap共享映射区"><a href="#Ⅲ-mmap共享映射区" class="headerlink" title="Ⅲ. mmap共享映射区"></a>Ⅲ. mmap共享映射区</h4><p>Linux提供了内存映射函数mmap，它把文件内容映射到一段内存上(准确说是虚拟内存上)，通过对这段内存的读取和修改, 实现对文件的读取和修改，mmap()系统调用使得进程之间可以通过映射一个普通的文件实现共享内存。</p>
 <p>普通文件映射到进程地址空间后，进程可以向访问内存的方式对文件进行访问，不需要其他系统调用(read,write)去操作。</p>
-<p><img src="https://imgkr.cn-bj.ufileos.com/3971d173-7e9d-42ec-8a08-020e3b9812cd.png" alt="mmap"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/imgkr-3971d173-7e9d-42ec-8a08-020e3b9812cd.png" alt="mmap"></p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">man</span> 2 mmap
 <span class="token comment" spellcheck="true">#include &lt;sys/mman.h></span>
 // 创建映射区

@@ -42,7 +42,7 @@ legacy: true
 </ul>
 <p>比如： <strong>ARM7TMDI</strong> 表示ARM指令集版本为7，支持 <strong>TMDI</strong> 变种</p>
 <p>在 <strong>ARMv7</strong> 以后时期，统一用 Cortex 作为主名。</p>
-<p><img src="https://i.loli.net/2020/03/18/6b8xJurhjlPngAz.png" alt="image-20200318200830713"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-6b8xJurhjlPngAz.png" alt="image-20200318200830713"></p>
 <h3 id="ARM公司"><a href="#ARM公司" class="headerlink" title="ARM公司"></a>ARM公司</h3><ol>
 <li><strong>ARM</strong> 公司于1990年11月在英国剑桥成立，前身为 <strong>Acorn</strong> 计算机公司。</li>
 <li><strong>ARM</strong> 公司是全球领先的16/32位嵌入式 <strong>RISC</strong> 微处理器解决方案供应商。</li>
@@ -72,7 +72,7 @@ legacy: true
 <li>大端模式(Big Endian)</li>
 <li>小端模式(Little Endian)</li>
 </ul>
-<p><img src="https://i.loli.net/2020/03/18/KV8RhDyjbAI2GQ5.png" alt="image-20200318194956268"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-KV8RhDyjbAI2GQ5.png" alt="image-20200318194956268"></p>
 <p>我们用ARM的一般是32-bit体系结构</p>
 <ul>
 <li>1 Byte = 8 bits</li>
@@ -162,7 +162,7 @@ legacy: true
 </li>
 </ul>
 <p>ARM状态下的寄存器组织：</p>
-<p><img src="https://i.loli.net/2020/03/18/GTu6Frz5mVIojck.png" alt="ARM状态下的寄存器组织"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-GTu6Frz5mVIojck.png" alt="ARM状态下的寄存器组织"></p>
 <p>未分组寄存器R0~R7</p>
 <ul>
 <li>在所有的运行模式下，未分组寄存器都指向同一个物理寄存器，他们未被系统用作特殊的用途，因此，在中断或异常处理进行运行模式转换时，由于不同的处理器运行模式均使用相同的物理寄存器，可能会造成寄存器中数据的破坏，这一点在进行程序设计时应引起注意。</li>
@@ -185,7 +185,7 @@ LDMFD SP!,{<Regs>,PC}</code></pre>
 </li>
 </ul>
 <p>当前程序状态寄存器(Current Program Status Register)</p>
-<p><img src="https://i.loli.net/2020/03/18/ypGErWXQstfHBSi.png" alt="当前程序状态寄存器"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-ypGErWXQstfHBSi.png" alt="当前程序状态寄存器"></p>
 <p>一般用SPSR来恢复CPSR！</p>
 <h4 id="异常-Exception"><a href="#异常-Exception" class="headerlink" title="异常(Exception)"></a>异常(Exception)</h4><ul>
 <li>当程序的正常流程必须临时停止时，就会出现异常，例如为来自外设的中断提供服务。在尝试处理异常之前，ARM7TDMI-S保留当前处理器状态，以便在处理程序例程完成后可以恢复原始程序。</li>
@@ -207,13 +207,13 @@ LDMFD SP!,{<Regs>,PC}</code></pre>
 <li>Forces the PC to fetch the next instruction from the relevant exceptions.(使PC处理相应的异常)</li>
 </ol>
 <p>中断向量表(Vector Table)</p>
-<p><img src="https://i.loli.net/2020/03/18/b98WngIeHRkq6lT.png" alt="中断向量表"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-b98WngIeHRkq6lT.png" alt="中断向量表"></p>
 <h4 id="异常返回"><a href="#异常返回" class="headerlink" title="异常返回"></a>异常返回</h4><ol>
 <li>PC  = LR - offset</li>
 <li>SPSR -&gt; CPSR</li>
 <li>Clear the interrupt disable flags that were set on entry(清除在中断时时设置的中断禁用标志)</li>
 </ol>
-<p><img src="https://i.loli.net/2020/03/18/kuF5jrey2t4Bown.png" alt="image-20200318213758689"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-kuF5jrey2t4Bown.png" alt="image-20200318213758689"></p>
 <p><strong>才疏学浅，望雅正！</strong></p>
 <p><valine></valine></p>
 </div>

@@ -14,19 +14,19 @@ legacy: true
 <div class="legacy-article-content cjk-supported">
 <h2 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a>算法简介</h2><p>迪杰斯特拉(Dijkstra)是从一个顶点到其余各顶点的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84">最短路径</a>算法，解决的是有权图中最短路径问题。迪杰斯特拉算法主要特点是从起始点开始，采用<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/5411800">贪心算法</a>的策略，每次遍历到始点距离最近且未访问过的顶点的邻接节点，直到扩展到终点为止。 </p>
 <p>讲白了，就是给你一张有很多城市的地图，要你求指定两个城市之间的最小距离。</p>
-<h2 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h2><p><img src="https://i.loli.net/2020/08/07/sZhSK5J7B8iT9WC.png" alt="带权有向图.png"></p>
+<h2 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h2><p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-sZhSK5J7B8iT9WC.png" alt="带权有向图.png"></p>
 <p>给定一个上述图，要求某两个点之间的最短路径，这就叫做 <strong>有权图单源最短路</strong> 。如果是要求任意两个点之间的最短路径，这就是 <strong>有权图无源最短路径</strong> ，无源最短路径用 <strong>Dijkstra</strong> 的时间复杂度就上去了，一般用 <strong>Floyd</strong> 算法了。</p>
 <p><strong>Dijkstra</strong> 理解不难，一起模拟一遍就懂了。</p>
 <p>为了方便模拟，我们把源点定义为V1。(这里V4-&gt;V5 的距离为2， 忘记写了)</p>
-<p><img src="https://i.loli.net/2020/08/07/93XwZRqDMlv1rtm.png" alt="幻灯片1.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/BbhtDRWKGre2Swq.png" alt="幻灯片2.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/8RAToLw763brfht.png" alt="幻灯片3.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/iFMD14dxqe6hztp.png" alt="幻灯片4.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/RzTmBhLD7fEcnHM.png" alt="幻灯片5.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/NTOMQYRsu8LP1UZ.png" alt="幻灯片6.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/JvmkxESRXuHTtbU.png" alt="幻灯片7.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/TintEkDNwMAyhsl.png" alt="幻灯片8.PNG"></p>
-<p><img src="https://i.loli.net/2020/08/07/HwygvJxIbQThfeo.png" alt="幻灯片9.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-93XwZRqDMlv1rtm.png" alt="幻灯片1.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-BbhtDRWKGre2Swq.png" alt="幻灯片2.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-8RAToLw763brfht.png" alt="幻灯片3.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-iFMD14dxqe6hztp.png" alt="幻灯片4.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-RzTmBhLD7fEcnHM.png" alt="幻灯片5.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-NTOMQYRsu8LP1UZ.png" alt="幻灯片6.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-JvmkxESRXuHTtbU.png" alt="幻灯片7.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-TintEkDNwMAyhsl.png" alt="幻灯片8.PNG"></p>
+<p><img src="https://raw.githubusercontent.com/wavachao/blog-img/main/legacy/loli-HwygvJxIbQThfeo.png" alt="幻灯片9.PNG"></p>
 <h3 id="造轮子"><a href="#造轮子" class="headerlink" title="造轮子"></a>造轮子</h3><p>利用的c++的 <strong>pair和prority_queue</strong> 实现 <strong>Dijkstra</strong> </p>
 <p>c++模板</p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">struct</span> cmp <span class="token punctuation">{</span>
