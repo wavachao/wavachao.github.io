@@ -144,15 +144,11 @@ input {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 35px;
   height: 35px;
-  place-items: center;
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-  font-family: var(--display);
-  font-size: 11px;
-  font-style: italic;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--line);
 }
 
 .brand-name {
