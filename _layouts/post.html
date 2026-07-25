@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="article-page">
+  <header class="article-header site-shell">
+    <a class="back-link" href="/blog/">← Back to writing</a>
+    <p class="page-kicker">{{ page.categories | join: " / " | default: "Notes" }}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="article-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.tags %}
+        <span>{{ page.tags | join: " · " }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="article-body site-shell cjk-supported">
+    {{ content }}
+  </div>
+
+  <footer class="article-end site-shell">
+    <span>End of note</span>
+    <a href="/archives/">Browse the archive →</a>
+  </footer>
+</article>
+

@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="site-shell header-inner">
+    <a class="brand" href="/" aria-label="Wu Huachao — home">
+      <span class="brand-mark">{{ site.data.profile.initials }}</span>
+      <span class="brand-name">{{ site.data.profile.name }}</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/" {% if page.nav == "home" %}aria-current="page"{% endif %}>Home</a>
+        <a href="/#work">Work</a>
+        <a href="/blog/" {% if page.nav == "blog" %}aria-current="page"{% endif %}>Blog</a>
+        <a href="/archives/" {% if page.nav == "archives" %}aria-current="page"{% endif %}>Archive</a>
+        <a href="/about/" {% if page.nav == "about" %}aria-current="page"{% endif %}>About</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+        <span class="theme-glyph" aria-hidden="true">◐</span>
+        <span class="theme-label">Theme</span>
+      </button>
+    </div>
+  </div>
+</header>
+

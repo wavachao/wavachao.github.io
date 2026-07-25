@@ -1,0 +1,95 @@
+---
+layout: default
+title: Writing
+nav: blog
+body_class: blog-page
+description: Notes on computer vision, C++, Linux, embedded systems, and the engineering details between them.
+---
+<header class="page-hero site-shell">
+  <div>
+    <p class="page-kicker">Blog / Field notes</p>
+    <h1>Ideas, experiments,<br>and engineering notes.</h1>
+  </div>
+  <p>
+    Long-form notes on computer vision, C++, Linux, embedded systems, and the
+    practical details that make technical work reproducible.
+  </p>
+</header>
+
+{% if site.posts.size > 0 %}
+  {% assign featured = site.posts.first %}
+  {% assign featured_url = featured.url %}
+  {% assign featured_category = featured.categories | first | default: "Notes" %}
+{% else %}
+  {% assign featured = site.data.legacy_posts[0] %}
+  {% assign featured_url = featured.path %}
+  {% assign featured_category = featured.category %}
+{% endif %}
+
+<section class="featured-note site-shell">
+  <div class="featured-note-meta">
+    <span>Latest note</span>
+    <time>{{ featured.date | date: "%B %-d, %Y" }}</time>
+  </div>
+  <a href="{{ featured_url }}">
+    <div>
+      <p>{{ featured_category }}</p>
+      <h2 class="cjk-supported">{{ featured.title }}</h2>
+      {% if featured.summary %}<span class="cjk-supported">{{ featured.summary | truncate: 190 }}</span>{% endif %}
+    </div>
+    <i aria-hidden="true">↗</i>
+  </a>
+</section>
+
+<section class="notes-section site-shell">
+  <div class="notes-heading">
+    <div>
+      <p class="page-kicker">Recent</p>
+      <h2>Latest entries</h2>
+    </div>
+    <a href="/archives/">Complete archive →</a>
+  </div>
+
+  <div class="notes-list">
+    {% for post in site.posts limit:8 %}
+      <a class="note-row" href="{{ post.url }}">
+        <time>{{ post.date | date: "%Y.%m.%d" }}</time>
+        <div>
+          <span>{{ post.categories | first | default: "Notes" }}</span>
+          <h3>{{ post.title }}</h3>
+        </div>
+        <p>{{ post.excerpt | strip_html | truncate: 110 }}</p>
+        <i>↗</i>
+      </a>
+    {% endfor %}
+    {% for post in site.data.legacy_posts limit:8 %}
+      <a class="note-row" href="{{ post.path }}">
+        <time>{{ post.date | replace: "-", "." }}</time>
+        <div>
+          <span>{{ post.category }}</span>
+          <h3 class="cjk-supported">{{ post.title }}</h3>
+        </div>
+        <p class="cjk-supported">{{ post.summary | truncate: 110 }}</p>
+        <i>↗</i>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="topic-index">
+  <div class="site-shell topic-layout">
+    <div>
+      <p class="page-kicker">Topics</p>
+      <h2>Browse by subject.</h2>
+    </div>
+    <div class="topic-links cjk-supported">
+      {% for topic in site.data.legacy_topics.categories %}
+        <a href="/archives/?q={{ topic.name | url_encode }}">
+          <span>{{ topic.name }}</span>
+          <small>{{ topic.count }}</small>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

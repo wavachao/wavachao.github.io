@@ -1,0 +1,1120 @@
+- title: Tft_eSPI驱动ST7735液晶屏
+  path: /2021/06/09/iot/2021/tft-espi-qu-dong-st7735-ye-jing-ping/
+  date: '2021-06-09'
+  year: '2021'
+  category: IOT
+  tags:
+  - ESP8266
+  summary: Ⅰ. 前言买了块1.8寸的tft液晶屏，之前一直用 Adafruit_ST7735 和 Adafruit_GFX 库驱动，使用还挺简单的，但是有些功能使用起来还是不太方便，也不太通用，换成 Tft_eSPI 库驱动，遇到了不少问题，记录下。
+- title: VSCode插件PlatformIO配置ESP8266使用教程
+  path: /2021/06/09/iot/2021/vscode-cha-jian-platformio-pei-zhi-esp8266-shi-yong-jiao-cheng/
+  date: '2021-06-09'
+  year: '2021'
+  category: IOT
+  tags:
+  - ESP8266
+  summary: Ⅰ. 安装VSCode就不介绍如何安装了，安装好VSCode后，直接打开Extensions，搜索PlatformIO点击install即可。 安装成功后重启便会多了个蚂蚁头样的栏目。并且状态栏会多出如下的图标。 Ⅱ. 安装平台支持点击状
+- title: GEC6818移植rtl8723bu wifi驱动
+  path: /2021/05/22/linux/2021/gec6818-yi-zhi-rtl8723bu-wifi-qu-dong/
+  date: '2021-05-22'
+  year: '2021'
+  category: Linux
+  tags:
+  - Linux
+  summary: 1. 配置内核进入内核目录。 执行 make menuconfig 然后会打开一个配置工具，它可以让你遍历每个可用模块，然后启用或者禁用你需要或者不需要的模块。（空格表示选择） 进入 NetWork device support
+    层下的 W
+- title: Ubuntu20.04搭建nfs服务
+  path: /2021/05/22/linux/2021/ubuntu20.04-da-jian-nfs-fu-wu/
+  date: '2021-05-22'
+  year: '2021'
+  category: Linux
+  tags:
+  - Linux
+  summary: Ubuntu20.04安装NFS服务器端 sudo apt-get install nfs-kernel-server 设置共享目录 mkdir -p /home/incipe/nfs sudo chmod 777 /home/incip
+- title: 移植opencv3.2.0含opencv_contrib
+  path: /2021/05/01/linux/2021/yi-zhi-opencv3.2.0-han-opencv-contrib/
+  date: '2021-05-01'
+  year: '2021'
+  category: Linux
+  tags:
+  - Linux Opencv
+  summary: 环境及工具准备 个人电脑： GEC6818嵌入式开发板 Opencv3.2.0 交叉编译器 交叉编译Opencv3.2.01.解压opencv3.2.0 unzip opencv-3.2.0.zip 2.解压opencv_c
+- title: arm-none-linux-gnueabi-gcc Command not found
+  path: /2021/03/28/linux/2021/arm-none-linux-gnueabi-gcc-command-not-found/
+  date: '2021-03-28'
+  year: '2021'
+  category: Linux
+  tags:
+  - Linux
+  summary: '前言最近遇到个超级大坑，移植中间件时，交叉编译总是出现 arm-none-linux-gnueabi-gcc: Command not found 报错，明明自己已经安装并且设置了交叉编译器的环境变量。却还是报这个错！！！
+    问题产生笔者安装'
+- title: 虚拟机连接摄像头黑屏问题
+  path: /2021/01/27/linux/2020/jie-jue-cheese-da-kai-she-xiang-tou-hou-hei-ping-de-wen-ti/
+  date: '2021-01-27'
+  year: '2021'
+  category: Linux
+  tags:
+  - 虚拟机
+  summary: Ⅰ. 问题 虚拟机连接好 usb 摄像头后，调用 cheese 后都是黑屏，没有任何显示，无法点击任何按钮。 Ⅱ. 解决办法 这样子就完美解决了，哈哈~
+- title: 我在校园爬虫打卡
+  path: /2021/01/23/python/2020/wo-zai-xiao-yuan-pa-chong-da-qia/
+  date: '2021-01-23'
+  year: '2021'
+  category: 博客
+  tags:
+  - Python
+  - Liunx
+  summary: Ⅰ. 下载Fiddler抓取https包Download Fiddler Classic 允许抓取 https 包 最后点击 ok 即可，第一次可能会有个警告，点击 yes 信任就好了。 Ⅱ. 分析我在校园打卡包现在我们可以成功抓取
+- title: opencv移植
+  path: /2020/12/30/linux/2020/opencv-yi-zhi/
+  date: '2020-12-30'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  - 移植
+  summary: 注：本篇博客已经弃用，请不要浪费时间阅读，笔者有空会更新最新的移植教程~ 最新文章移植opencv3.2.0含opencv_contrib 一. 移植依赖库主要需要移植如下几个依赖库： zlib-1.2.11 jpegsrc.v9b
+    li
+- title: 虚拟机扩容
+  path: /2020/12/30/linux/2020/xu-ni-ji-kuo-rong/
+  date: '2020-12-30'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 由于最开始安装linux时没考虑到容量问题，导致现在使用显示容量不足。 通过简单的虚拟机容量扩展，发现实际大小并没有改变。 可以看到，我虚拟机的磁盘大小是100GB，但是实际上并没有那么大。 如果安装的linux分区简单的，直接扩容就好了
+- title: MiniSQL实验
+  path: /2020/11/27/linux/2020/minisql-shi-yan/
+  date: '2020-11-27'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 本次实验需要用到的包： Ⅰ. 交叉编译msql库因为最终代码要到开发板上去跑，所以要用 arm-linux-gcc 编译好 msql 代码才可以到板子上执行，编译的过程是需要链接 arm 编译好的库的。 msql 十分小巧，编译的库是静态
+- title: Autotools工具使用
+  path: /2020/11/25/linux/2020/autotools-gong-ju-shi-yong-duo-wen-jian-tong-mu-lu/
+  date: '2020-11-25'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 1. 工具介绍Autoconf/Automake 工具用于自动创建功能完善的 Makefile 文件。 Autotools 主要包括：autoconf、automake、perl 语言环境和 m4。 2. 使用示范目录树：
+    tree . |
+- title: JXARM9-2410-3实验三
+  path: /2020/11/08/linux/2020/jxarm9-2410-3-shi-yan-san/
+  date: '2020-11-08'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: JXARM9-2410-3实验三
+- title: 剑指 Offer 39. 数组中出现次数超过一半的数字
+  path: /2020/11/02/leetcode/2020/jian-zhi-offer-39.shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi/
+  date: '2020-11-02'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 滑动窗口
+  summary: 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+- title: JXARM9-2410-3实验二
+  path: /2020/11/01/linux/2020/jxarm9-2410-3-shi-yan-er/
+  date: '2020-11-01'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: JXARM9-2410-3实验二
+- title: JXARM9-2410-3实验一
+  path: /2020/11/01/linux/2020/jxarm9-2410-3-shi-yan-yi/
+  date: '2020-11-01'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: JXARM9-2410-3实验一
+- title: 剑指 Offer 28. 对称的二叉树
+  path: /2020/10/27/leetcode/2020/jian-zhi-offer-28.dui-cheng-de-er-cha-shu/
+  date: '2020-10-27'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 二叉树
+  summary: 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
+- title: 剑指 Offer 26. 树的子结构
+  path: /2020/10/27/leetcode/2020/jian-zhi-offer-26.shu-de-zi-jie-gou/
+  date: '2020-10-27'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 二叉树
+  summary: 输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
+- title: jetson nano刷机
+  path: /2020/10/27/linux/2020/jetson-nano-shua-ji/
+  date: '2020-10-27'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: jetson nano刷机教程~
+- title: 978. 最长湍流子数组
+  path: /2020/10/26/leetcode/2020/978.zui-chang-tuan-liu-zi-shu-zu/
+  date: '2020-10-26'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 滑动窗口
+  summary: 当 A 的子数组 A[i], A[i+1], ..., A[j] 满足下列条件时，我们称其为湍流子数组
+- title: 56. 合并区间
+  path: /2020/10/22/leetcode/2020/56.he-bing-qu-jian/
+  date: '2020-10-22'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 数组
+  summary: '原题 给出一个区间的集合，请合并所有重叠的区间。 示例 1: 输入: intervals = [[1,3],[2,6],[8,10],[15,18]] 输出: [[1,6],[8,10],[15,18]] 解释: 区间
+    [1,3] 和 ['
+- title: 763. 划分字母区间
+  path: /2020/10/22/leetcode/2020/763.hua-fen-zi-mu-qu-jian/
+  date: '2020-10-22'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 贪心
+  summary: 原题 字符串 S 由小写字母组成。我们要把这个字符串划分为尽可能多的片段，同一个字母只会出现在其中的一个片段。返回一个表示每个字符串片段的长度的列表。 示例 1： 输入：S = “ababcbacadefegdehijhklij”
+    输出：
+- title: python爬取必应壁纸
+  path: /2020/10/13/python/2020/python-pa-qu-bi-ying-bi-zhi/
+  date: '2020-10-13'
+  year: '2020'
+  category: 博客
+  tags:
+  - 爬虫
+  summary: 前言一个喜欢折腾的人，长期看到桌面只有一种壁纸，就想着自己从网上爬取一些壁纸，存下来，随机切换壁纸。 本文仅供学习交流。 工具Python3 + requests + re Fiddler 抓包工具。 分析必应官网好像无法使用
+    Ctrl +
+- title: LCP 12. 小张刷题计划
+  path: /2020/10/02/leetcode/2020/lcp-12.xiao-zhang-shua-ti-ji-hua/
+  date: '2020-10-02'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 中等
+  - 二分答案
+  summary: 原题 为了提高自己的代码能力，小张制定了 LeetCode 刷题计划，他选中了 LeetCode 题库中的 n 道题，编号从 0 到 n-1，并计划在 m 天内按照题目 编号顺序刷完所有的题目（注意，小张不能用多天完成同一题）。
+    在小张刷题
+- title: git常用命令
+  path: /2020/10/01/linux/2020/git-shi-yong-chao-xiang-xi/
+  date: '2020-10-01'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  - git
+  summary: 读完本文，你将了解git的常用操作。 注：本文不介绍git历史，也不介绍如何安装git，更不介绍如何使用github。 有需要的读者可以参考 同时推送代码至github和gitee Ⅰ. 基本操作创建版本库mkdir git
+    cd g
+- title: 解决使用代理软件后win10自带应用无法联网的问题
+  path: /2020/09/29/software/2020/jie-jue-shi-yong-dai-li-ruan-jian-hou-win10-zi-dai-ying-yong-wu-fa-lian-wang-de-wen-ti/
+  date: '2020-09-29'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 方案1使用clash for windows软件，里面有个 UWP Loopback 点击一下，会弹出这个界面。 然后你想让哪个软件走代理，就选中哪个软件，最后点击 Save Changes 即可。 特别注意：第一个选项不能打勾，否则设
+- title: GEC6818音乐播放器制作
+  path: /2020/09/28/iot/2020/gec6818-yin-le-bo-fang-qi-zhi-zuo/
+  date: '2020-09-28'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: '环境# linux操作系统 uname -a Linux incipe-virtual-machine 5.4.0-31-generic #35-Ubuntu SMP Thu May 7 20:20:34 UTC 2020
+    x86_64 x'
+- title: Ubuntu20.04安装arm-linux-gcc交叉编译器
+  path: /2020/09/28/iot/2020/ubuntu20.04-an-zhuang-arm-linux-gcc-jiao-cha-bian-yi-qi/
+  date: '2020-09-28'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: 下载本文安装的交叉编译器是 arm-linux-gcc4.4.3 32位的，其他版本安装类似。 友善之臂官网下载地址 ：http://www.arm9.net/download.asp 喜欢网盘下载的朋友可以使用 [https://pan.
+- title: 147. 对链表进行插入排序
+  path: /2020/09/24/leetcode/2020/147.dui-lian-biao-jin-xing-cha-ru-pai-xu/
+  date: '2020-09-24'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 链表
+  summary: 原题 对链表进行插入排序。 插入排序的动画演示如上。从第一个元素开始，该链表可以被认为已经部分排序（用黑色表示）。 每次迭代时，从输入数据中移除一个元素（用红色表示），并原地将其插入到已排好序的链表中。 插入排序算法： 插入排序是迭代的
+- title: PicGo+Typora+Gitee搭建本地博客图片环境
+  path: /2020/08/26/software/2020/picgo-typora-gitee-da-jian-ben-di-bo-ke-huan-jing/
+  date: '2020-08-26'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 前言本来想着看看别人的博客就可以轻松实现了，到头来，使用方法好像出现了点变化，又被折腾了，记录下最新使用方法。 安装 typora 安装 PicGo 拥有 Gitee 账号 配置Ⅰ. 获得token没有 Gitee 仓库就创建一
+- title: conda常用方法
+  path: /2020/08/24/python/2020/conda-shi-yong/
+  date: '2020-08-24'
+  year: '2020'
+  category: 博客
+  tags:
+  - Python
+  - Liunx
+  summary: 安装参考我的这篇文章即可，Ubuntu20.04安装Anaconda 常见用法Ⅰ. 创建虚拟环境conda create --name name python=3.8 name 就是你要创建的虚拟环境的名字，python
+    指定版本后，就会自
+- title: pandas入门
+  path: /2020/08/20/python/2020/pandas-ru-men/
+  date: '2020-08-20'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数据分析
+  summary: 什么是pandaspandas 是基于一种 NumPy 的一种工具。NumPy 只能处理数值型的数据，但是 pandas 除了处理数值之外，还可以处理其它类型的数据。比如，字符串，时间序列等。 使用Ⅰ. 数据结构 维数 名称
+    描述
+- title: Ubuntu20.04安装Anaconda
+  path: /2020/08/16/linux/2020/ubuntu20.04-an-zhuang-anaconda/
+  date: '2020-08-16'
+  year: '2020'
+  category: Linux
+  tags:
+  - 虚拟环境
+  summary: 下载官网 下载最新的就好了。 官网国内速度不行，建议去清华开源镜像站下载。 安装切换到下载Anaconda目录。 打开终端，输入： zsh Anaconda*-*.*.*-Linux-x86_64.sh 如果你用的 bash
+    请把 zsh
+- title: PAT1009
+  path: /2020/08/16/pat-jia-zu/2020/pat1011/
+  date: '2020-08-16'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 With the 2010 FIFA World Cup running, football fans the world over were becoming increasingly excited as the
+    best pla
+- title: matplotlib使用
+  path: /2020/08/16/python/2020/matplotlib-shi-yong/
+  date: '2020-08-16'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数据分析
+  summary: 什么是matplotlib Matplotlib 可能是 Python 2D-绘图领域使用最广泛的套件。它能让使用者很轻松地将数据图形化，并且提供多样化的输出格式。这里将会探索 matplotlib 的常见用法。 菜鸟教程
+    使用Ⅰ. 绘
+- title: 科学计算Numpy
+  path: /2020/08/16/python/2020/ke-xue-ji-suan-numpy/
+  date: '2020-08-16'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数据分析
+  summary: 什么是Numpy NumPy 是一个运行速度非常快的数学库，主要用于数组计算，包含： 一个强大的N维数组对象 ndarray 广播功能函数 整合 C/C++/Fortran 代码的工具 线性代数、傅里叶变换、随机数生成等功能
+    使用Ⅰ.
+- title: 网络模型
+  path: /2020/08/13/linux/2020/wang-luo-mo-xing/
+  date: '2020-08-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - web
+  summary: IP地址简单来讲，IP地址就是用来在网络中标记一台电脑的。在本地局域网是唯一的。 IP地址分类每个IP地址由网络地址和主机地址组成。 A类IP地址，IP地址前8为表示网络ID，后24位表示主机ID。 B类IP地址，IP地址前16位表示网络
+- title: PAT1009
+  path: /2020/08/12/pat-jia-zu/2020/pat1009/
+  date: '2020-08-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 This time, you are supposed to find A×B where A and B are two polynomials. Input Specification:Each input file
+    contai
+- title: PAT1008
+  path: /2020/08/10/pat-jia-zu/2020/pat1008/
+  date: '2020-08-10'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 The highest building in our city has only one elevator. A request list is made up with N positive numbers. The
+    number
+- title: PAT1006
+  path: /2020/08/10/pat-jia-zu/2020/pat1006/
+  date: '2020-08-10'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 At the beginning of every day, the first person who signs in the computer room will unlock the door, and the
+    last one
+- title: PAT1007
+  path: /2020/08/10/pat-jia-zu/2020/pat1007/
+  date: '2020-08-10'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 Given a sequence of K integers { N1, N2, …, N**K }. A continuous subsequence is defined to be { N**i, N**i+1,
+    …, N**j
+- title: PAT1003 迪杰斯特拉(Dijkstra)
+  path: /2020/08/07/pat-jia-zu/2020/pat1003/
+  date: '2020-08-07'
+  year: '2020'
+  category: 博客
+  tags:
+  - Dijkstra
+  summary: 算法简介迪杰斯特拉(Dijkstra)是从一个顶点到其余各顶点的最短路径算法，解决的是有权图中最短路径问题。迪杰斯特拉算法主要特点是从起始点开始，采用贪心算法的策略，每次遍历到始点距离最近且未访问过的顶点的邻接节点，直到扩展到终点为止。
+- title: PAT1004
+  path: /2020/08/04/pat-jia-zu/2020/pat1004/
+  date: '2020-08-04'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 A family hierarchy is usually presented by a pedigree tree. Your job is to count those family members who have
+    no chi
+- title: PAT1005
+  path: /2020/08/04/pat-jia-zu/2020/pat1005/
+  date: '2020-08-04'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit
+    of the
+- title: PAT1002
+  path: /2020/08/01/pat-jia-zu/2020/pat1002/
+  date: '2020-08-01'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 This time, you are supposed to find A+B where A and B are two polynomials. Input Specification:Each input file
+    contai
+- title: PAT1001
+  path: /2020/07/31/pat-jia-zu/2020/pat1001/
+  date: '2020-07-31'
+  year: '2020'
+  category: 博客
+  tags:
+  - PAT
+  summary: 原题 Calculate a+b and output the sum in standard format – that is, the digits must be separated into groups of three
+    by c
+- title: Linux下创建虚拟python环境
+  path: /2020/07/31/python/2020/linux-xia-chuang-jian-xu-ni-python-huan-jing/
+  date: '2020-07-31'
+  year: '2020'
+  category: 博客
+  tags:
+  - Python
+  - Liunx
+  summary: 为什么需要虚拟环境简单来讲，就是因为不同的项目可能需要不同的python package。但是，往往安装了最新版本的package会覆盖掉原来的，导致原有的项目因为package不同而无法正常工作。最常用的一个办法就是使用
+    virtuale
+- title: 位运算
+  path: /2020/07/30/c/2020/wei-yun-suan/
+  date: '2020-07-30'
+  year: '2020'
+  category: 博客
+  tags:
+  - 位运算
+  summary: 本文主要讲使用位运算的一些技巧。 位运算位运算符号 符号 c/cpp python 含义 按位与 a & b a & b 1 & 1 = 1, 1 & 0 = 0, 同1为1, 有0为0 按位或
+- title: 几个重要的函数
+  path: /2020/07/30/kao-yan/2020/ji-ge-chong-yao-de-han-shu/
+  date: '2020-07-30'
+  year: '2020'
+  category: 博客
+  tags:
+  - 考研
+  - 函数
+  summary: 几个重要的函数Ⅰ. 绝对值函数$$ f(x)=\left|x\right| = \left{ \begin{aligned} -x, x < 0 \ x, x \geq 0 \end{aligned} \right. =
+    \left{
+- title: Linux进程下
+  path: /2020/06/23/linux/2020/linux-jin-cheng-xia/
+  date: '2020-06-23'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 一. 信号Ⅰ. 信号的基本概念信号 信号产生 按键产生，Ctrl + c、Ctrl + z； 调用函数，kill、raise、abort； 定时器，alarm、setitimer； 命令产生，kill； 硬件异常，段错误，浮点型错误，总线
+- title: Linux线程
+  path: /2020/06/23/linux/2020/linux-xian-cheng/
+  date: '2020-06-23'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 一. 线程pthread不是linux下默认的库，有可能需要安装。 sudo apt-get install glibc-doc sudo apt-get install manpages-posix-dev 通过man
+    pthread_c
+- title: 利用selenium自动完成教学质量测评
+  path: /2020/06/20/python/2020/li-yong-selenium-zi-dong-wan-cheng-jiao-xue-zhi-liang-ce-ping/
+  date: '2020-06-20'
+  year: '2020'
+  category: 博客
+  tags:
+  - Python
+  summary: 准备工具 selenium sudo pip3 install seletinum chromedriver https://chromedriver.chromium.org/downloads 放到/usr/local/bin目录下
+- title: 剑指offer12. 矩阵中的路径
+  path: /2020/06/02/leetcode/2020/jian-zhi-offer12.ju-zhen-zhong-de-lu-jing/
+  date: '2020-06-02'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 中等
+  summary: 原题 请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一格开始，每一步可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。例如，在下面的3×4
+- title: 剑指offer13. 机器人的运动范围
+  path: /2020/06/02/leetcode/2020/jian-zhi-offer13.ji-qi-ren-de-yun-dong-fan-wei/
+  date: '2020-06-02'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 中等
+  summary: 原题 地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。例如，
+- title: 剑指offer11. 旋转数组的最小数字
+  path: /2020/06/01/leetcode/2020/jian-zhi-offer11.xuan-zhuan-shu-zu-de-zui-xiao-shu-zi/
+  date: '2020-06-01'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。 例如，数组 [3,4,5,1,2] 为 [1,2,3,4,5] 的一个旋转，该数组的最小值为1。
+    示例
+- title: 剑指offer10- II. 青蛙跳台阶问题
+  path: /2020/05/31/leetcode/2020/jian-zhi-offer10-ii.qing-wa-tiao-tai-jie-wen-ti/
+  date: '2020-05-31'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。 答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。 示例 1：
+    输入：n = 2
+- title: 剑指offer10- I. 斐波那契数列
+  path: /2020/05/30/leetcode/2020/jian-zhi-offer10-i.fei-bo-na-qi-shu-lie/
+  date: '2020-05-30'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下： F(0) = 0, F(1) = 1 F(N) = F(N - 1) + F(N - 2), 其中 N > 1. 斐波那
+- title: 剑指offer09. 用两个栈实现队列
+  path: /2020/05/29/leetcode/2020/jian-zhi-offer09.yong-liang-ge-zhan-shi-xian-dui-lie/
+  date: '2020-05-29'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1
+    ) 示例 1：
+- title: 剑指offer07. 重建二叉树
+  path: /2020/05/28/leetcode/2020/jian-zhi-offer07.chong-jian-er-cha-shu/
+  date: '2020-05-28'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 中等
+  summary: 原题 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。 例如，给出 前序遍历 preorder = [3,9,20,15,7]中序遍历 inorder = [9,3,15,20
+- title: 剑指offer06. 从头到尾打印链表
+  path: /2020/05/27/leetcode/2020/jian-zhi-offer06.cong-wei-dao-tou-da-yin-lian-biao/
+  date: '2020-05-27'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。 示例 1： 输入：head = [1,3,2]输出：[2,3,1] 限制： 0 <= 链表长度 <= 10000 来源：力扣（LeetCode）
+- title: 剑指offer05. 替换空格
+  path: /2020/05/22/leetcode/2020/jian-zhi-offer-ti-huan-kong-ge/
+  date: '2020-05-22'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 示例 1： 输入：s = “We are happy.”输出：”We%20are%20happy.” 限制： 0 <= s 的长度 <= 10000 来
+- title: 剑指offer04. 二维数组中的查找
+  path: /2020/05/21/leetcode/2020/jian-zhi-offer-er-wei-shu-zu-zhong-de-cha-zhao/
+  date: '2020-05-21'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: '原题 在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。 示例: 现有矩阵 matrix
+    如下 [ [1'
+- title: 剑指offer03. 数组中重复的数
+  path: /2020/05/20/leetcode/2020/jian-zhi-offer-shu-zu-zhong-chong-fu-de-shu/
+  date: '2020-05-20'
+  year: '2020'
+  category: 剑指offer
+  tags:
+  - 简单
+  summary: 原题 找出数组中重复的数字。 在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。 示例
+    1： 输入：[
+- title: 11. 盛最多水的容器
+  path: /2020/05/16/leetcode/2020/11-sheng-zui-duo-shui-de-rong-qi/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 双指针
+  summary: 原题 给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容
+- title: 102. 二叉树的层次遍历
+  path: /2020/05/16/leetcode/2020/102-er-cha-shu-de-ceng-ci-bian-li/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 二叉树
+  - 广度优先搜索遍历
+  summary: 世界以痛吻我，我却报之以歌 --泰戈尔 原题链接 二叉树构造： /** * Definition for a binary tree node. * struct TreeNode { * int val; * Tree
+- title: 15. 三数之和
+  path: /2020/05/16/leetcode/2020/15-san-shu-zhi-he/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 双指针
+  summary: 原题 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。 注意：答案中不可以包含重复的三元组。 示例： 给定数组
+    num
+- title: 199. 二叉树的右视图
+  path: /2020/05/16/leetcode/2020/199-er-cha-shu-de-you-shi-tu/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 二叉树
+  summary: '原题 给定一棵二叉树，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。 示例: 输入: [1,2,3,null,5,null,4] 输出: [1, 3, 4] 解释: 1 <— /'
+- title: 1. 两数之和
+  path: /2020/05/16/leetcode/2020/1-liang-shu-zhi-he/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - Hash
+  summary: '原题 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。 示例:
+    给定 nums ='
+- title: 200. 岛屿数量
+  path: /2020/05/16/leetcode/2020/200-dao-yu-shu-liang/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 深度优先搜索遍历
+  summary: '原题 给你一个由 ‘1’（陆地）和 ‘0’（水）组成的的二维网格，请你计算网格中岛屿的数量。 岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。 此外，你可以假设该网格的四条边均被水包围。
+    示例 1: 输入:'
+- title: 3. 无重复的字符串的最长子串
+  path: /2020/05/16/leetcode/2020/3-wu-chong-fu-zi-fu-chuan-de-zui-chang-zi-chuan/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 字符串
+  summary: '原题 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。 示例 1: 输入: “abcabcbb” 输出: 3 解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。 示例 2: 输入: “bbbbb”'
+- title: 372. 超级次方
+  path: /2020/05/16/leetcode/2020/372.chao-ji-ci-fang/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 数学
+  summary: 题目链接：超级次方 一开始直接用快速幂，结果直接超时。 long long FastPow(long long a,long long c) { long long res=1; while(c) {
+- title: 22. 括号生成
+  path: /2020/05/16/leetcode/2020/22-gua-hao-sheng-cheng/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 深度优先搜索遍历
+  summary: 原题 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。 示例： 输入：n = 3输出：[ “((()))”, “(()())”, “(())()”,
+- title: 42. 接雨水
+  path: /2020/05/16/leetcode/2020/42-jie-yu-shui/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 栈
+  summary: 原题 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。 上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示
+- title: 455. 两数相加Ⅱ
+  path: /2020/05/16/leetcode/2020/445-liang-shu-xiang-jia-ii/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 链表
+  summary: 原题 给你两个 非空 链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。 你可以假设除了数字 0 之外，这两个数字都不会以零开头。 进阶： 如果输入链表不能修改该如何处理？换句
+- title: 46. 全排列
+  path: /2020/05/16/leetcode/2020/46-quan-pai-lie/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 深度优先搜索遍历
+  summary: '原题 给定一个 没有重复 数字的序列，返回其所有可能的全排列。 示例: 输入: [1,2,3]输出:[ [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]] 来源：力扣（L'
+- title: 55. 跳跃游戏
+  path: /2020/05/16/leetcode/2020/55-tiao-yue-you-xi/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 贪心
+  summary: '原题 给定一个非负整数数组，你最初位于数组的第一个位置。 数组中的每个元素代表你在该位置可以跳跃的最大长度。 判断你是否能够到达最后一个位置。 示例 1: 输入: [2,3,1,1,4] 输出: true 解释: 我们可以先跳
+    1 步，'
+- title: 56. 合并区间
+  path: /2020/05/16/leetcode/2020/56-he-bing-qu-jian/
+  date: '2020-05-16'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 数学
+  summary: '原题 给出一个区间的集合，请合并所有重叠的区间。 示例 1: 输入: [[1,3],[2,6],[8,10],[15,18]] 输出: [[1,6],[8,10],[15,18]] 解释: 区间 [1,3] 和 [2,6]
+    重叠, 将它们'
+- title: Github+Hexo搭载博客
+  path: /2020/05/15/software/2020/github-hexo-da-zai-bo-ke/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 很久就想搞个自己的博客了，就从Github Pages练练手吧！ 1. 创建Github账户 接下来，直接通过 username.github.io 就可以打开Github Pages了！ 2. 安装Git这个就是一个软件的安装，不多讲了
+- title: Settings Sync使用设置(亲测有效)
+  path: /2020/05/15/software/2020/settings-sync-shi-yong-she-zhi-qin-ce-you-xiao/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 会当凌绝顶，一览众山小 网上看了很多关于Sync的教程，感觉好像已经过时了，可读性不高，按照步骤也设置不好，结合自己的理解，和对他人的参考，在这里插入代码片写了个简单实用的教程！ 1.首先安装Seetings Sync安装完毕后，打开Syn
+- title: Visual Studio 2019设置自定义背景及特效插件
+  path: /2020/05/15/software/2020/visual-studio-2019-she-zhi-zi-ding-yi-bei-jing-ji-te-xiao-cha-jian/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 1.安装插件：Background（ClaudiaIDE） Color Theme Editor for Visual Studio 2019 路径：【工具】->【扩展和更新】->【联机】 2.设置：【工具】->【选项】-
+- title: Visual Studio Code配置C/C++环境(win10)
+  path: /2020/05/15/software/2020/visual-studio-code-pei-zhi-cc-huan-jing/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 'Ⅰ. 安装编辑器Vscodevscode 选择适合自己系统的版本。 Ⅱ. 安装编译器mingw64在 windows 下安装 mingw64 编译器有点麻烦，不过，我都准备好了，直接下载直接使用就好了。 链接: https://pan'
+- title: keil简单实用
+  path: /2020/05/15/software/2020/keil-jian-dan-shi-yong/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 注：本文适合绝对0基础，如果有一定的基础，可以移步。 一. keil简单介绍Keil 提供了包括C编译器、宏汇编、链接器、库管理和一个功能强大的仿真调试器等在内的完整开发方案，通过一个集成开发环境（μVision）将这些部分组合在一起。
+    更
+- title: mingw-w64安装
+  path: /2020/05/15/software/2020/mingw-w64-an-zhuang/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 'Ⅰ. 离线安装如果在线安装的话，可能不会成功。 可以直接去 sourcegorge 下载离线包 也可以用百度网盘下载： 链接: https://pan.baidu.com/s/1-MhgLjwG0xHtFtyNy-M_Fg
+    提取码: 3ia'
+- title: Vscode设置个性化背景教程
+  path: /2020/05/15/software/2020/vscode-she-zhi-ge-xing-hua-bei-jing-jiao-cheng/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: Vscode都配置好了，接下来设置一个有趣的个性化背景。 如果没有安装好C++编译环境可以参考：Visual Studio Code配置C/C++环境(win10) 1.搜索插件background安装好了以后会出现插件破损的提示，别理，设
+- title: 完美解决wamp的MySQL和MySQL冲突问题及wamp无法打开localhost问题
+  path: /2020/05/15/software/2020/wan-mei-jie-jue-wamp-de-mysql-he-mysql-chong-tu-wen-ti-ji-wamp-wu-fa-da-kai-localhost-wen-ti/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 当我们使用wamp时，如果系统之前已经安装了MySQL，会发现wamp的MySQL和原来的MySQL只有一个可以使用，原因就是因为端口冲突。可能还会经常遇到的一个问题，就是安装了wamp后无法打开localhost，原因也是因为端口冲突。下
+- title: 安装BurpSuite_Pro
+  path: /2020/05/15/software/2020/an-zhuang-burpsuite-pro/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 如果是jdk最新版的环境，建议用用BurpSuiteV1.6破解版，授权日期到2099-12-3。 下载地址 提取码：q6yd 否则，请参考以下步骤安装最新版burp！ 首先安装java环境，还要有jre（ 很重要 ） 下载burp-lo
+- title: 同时推送代码至github和gitee
+  path: /2020/05/15/software/2020/tong-shi-tui-song-dai-ma-zhi-github-he-gitee/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 1.注册github和gitee账号 这就不说了，很简单，然后创建仓库。github仓库的英文名是：Repository 。 2.下载git git是分布式版本控制系统，官网下载地址： 选择版本下载安装，安装的时候没特别需求一路next就好
+- title: 用Fiddler构造http请求
+  path: /2020/05/15/software/2020/yong-fiddler-gou-zao-http-qing-qiu/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: '用Fiddler构造http请求时，发现 $_POST数组中怎么也获取不到值，以为自己操作错了，但也没发现什么问题，后来得知，原来缺少了一个请求头，Fiddler不会为我们自动添加。 Content-Type: application/x-'
+- title: 解决笔记本连接wifi提示无法连接这个网络问题
+  path: /2020/05/15/software/2020/jie-jue-shou-ji-lian-jie-shang-wifi-ke-yi-shang-wang-dian-nao-bu-shang-bu-liao-wang-de-wen-ti/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 问题一般家里的 路由器 开启了 DHCP 动态分配 IP 功能，由于无法分配 IP 就可能导致电脑无法上网，只需要让电脑重新获取 IP 即可。 可解决的情况 电脑成功连上 WIFI； 电脑右下角 WIFI 显示 此wifi不能上网。
+- title: 解决笔记本连接wifi提示无法连接这个网络问题
+  path: /2020/05/15/software/2020/jie-jue-bi-ji-ben-lian-jie-wifi-ti-shi-wu-fa-lian-jie-zhe-ge-wang-luo-wen-ti/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: 这几天被这个该死的折腾的死去活来，网上找了好多教程，试过之后感觉都没用（其实很多还是有用的，讲的跟自己做的貌似不太一样）小声逼逼QAQ 首先，很大概率上不是电脑硬件坏了。 基本上都是驱动问题。 win10自带的疑难杂症估计也解决不了。
+    重置
+- title: 电脑网卡是否支持5Ghz频段
+  path: /2020/05/15/software/2020/dian-nao-wang-qia-shi-fou-zhi-chi-5ghz-pin-duan/
+  date: '2020-05-15'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - 博客
+  summary: win + r 键入 netsh wlan show drivers 可查看网卡支持的无线电类型 1）802.11b、802.11g只支持2.4GHz2）802.11a、802.11ac支持5GHz3）802.11n 采用了多重输入/输
+- title: 单片机仿真指示灯开关控制器
+  path: /2020/05/14/mcu/2020/dan-pian-ji-fang-zhen-zhi-shi-deng-kai-guan-kong-zhi-qi/
+  date: '2020-05-14'
+  year: '2020'
+  category: IOT
+  tags:
+  - MCU
+  summary: 目标程序启动后， 8 只发光二极管先整体闪烁 3 次（即亮→暗→亮→暗→亮→暗，间隔时间以肉眼可观察到为准），然后根据开关状态控制对应发光二极管的亮灯状态，即开关闭合相应灯亮，开关断开相应灯灭，直至停止程序运行软件编程原理为：
+    8 只发
+- title: 单片机仿真指示灯数码管的中断控制
+  path: /2020/05/14/mcu/2020/dan-pian-ji-fang-zhen-zhi-shi-deng-shu-ma-guan-de-zhong-duan-kong-zhi/
+  date: '2020-05-14'
+  year: '2020'
+  category: IOT
+  tags:
+  - MCU
+  summary: 目标在编程软件的配合下，要求实现如下功能： 程序启动后，D处于熄灯、LED1处于黑屏状态；单击K1，可使D亮灯状态反转一次；单击K2，可使LED1显示值加1，并按十六进制数显示，达到F后重新从1开始。 所需芯片 AT89C51
+    CAP
+- title: 如何用proteus仿真8086
+  path: /2020/05/14/mcu/2020/ru-he-yong-proteus-fang-zhen-8086/
+  date: '2020-05-14'
+  year: '2020'
+  category: 软件使用
+  tags:
+  - IOT
+  summary: 岁月不饶人，我亦未曾饶过岁月。 1.需要的工具proteus 过低版本不可以仿真8086，请下载7.8版本及以上的 下载地址(附教程) 提取码：rh8j emu8086 官网地址 网盘地址 提取码：j5qn 2.编译汇编代码打开emu808
+- title: 单片机仿真循环点亮那盏灯
+  path: /2020/05/14/mcu/2020/dan-pian-ji-fang-zhen-dian-liang-na-zhan-deng/
+  date: '2020-05-14'
+  year: '2020'
+  category: IOT
+  tags:
+  - MCU
+  summary: 目标学单片机课程也有一段时间了，今天亲自动手做个超级 easy 的仿真试验，通过 keil + proteus 来点亮发光二极管。 所需软件及芯片 keil proteus AT89C51 CAP CAP-ELEC CRYSTAL
+    LED
+- title: 嵌入式学习笔记(1)
+  path: /2020/05/13/iot/2020/qian-ru-shi-arm-xue-xi-bi-ji-1/
+  date: '2020-05-13'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: 计算机系统(Computer System) 个人计算机(Personal Computer) 服务器(Server) 嵌入式系统(Embedded System) 对比 Server Personal Computer
+    Embe
+- title: 嵌入式学习笔记(2)
+  path: /2020/05/13/iot/2020/qian-ru-shi-arm-xue-xi-bi-ji-2/
+  date: '2020-05-13'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: ARM体系ARM：Advanced RISC Machine ARM命名规则 ARMv n variants x (variants) 固定字符，即ARM Version 指令集版本号 变种 排除x后指定的变种 常见的vari
+- title: 嵌入式学习笔记(3)
+  path: /2020/05/13/iot/2020/qian-ru-shi-arm-xue-xi-bi-ji-3/
+  date: '2020-05-13'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: ARM指令集精简指令集设计理念(The RISC design philosophy) 设计原则(Design rules) 指令”短小精悍” 应用流水线技术设计 大量采用寄存器 Load/Store存储结构 ARM指令集特点
+    所有
+- title: 嵌入式Arm立即数判定
+  path: /2020/05/13/iot/2020/qian-ru-shi-arm-li-ji-shu-pan-ding/
+  date: '2020-05-13'
+  year: '2020'
+  category: IOT
+  tags:
+  - ARM
+  summary: '基础知识在ARM中，机器指令的格式大致有以下几种： 立即寻址的方式 立即寻址 在立即寻址，操作数本身直接在指令中给出，取出指令也就获得了操作数，这个操作数也称为立即数。例子如下 ADD R0, R1, #0xF ;R0=R1'
+- title: Makefile简单使用
+  path: /2020/05/13/linux/2020/makefile-jian-dan-shi-yong/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Makefile
+  summary: 一. 题外话1.1 c/cc编译流程以 main.cpp 为例： 1.2 gcc编译参数( 部分)除了前面的 -E -S -c 以外 -o 指定输出的文件名； -Wall 启用所有警告； -w 不产生任何警告； -g 生成调试信息；
+    -
+- title: Linux进程中
+  path: /2020/05/13/linux/2020/linux-jin-cheng-zhong/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: '一. Linux进程间通信Ⅰ. 管道函数管道是有大小的，通过ulimit -a查看管道大小 man 2 pipe #include <unistd.h> int pipe(int pipefd[2]); 参数 文件描述符。'
+- title: Linux进程
+  path: /2020/05/13/linux/2020/linux-jin-cheng/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 一. 操作系统小知识注：此笔记的重点不是讲操作系统，故操作系统知识比较粗浅，只是介绍。 1. 进程和程序 程序，是指编译好的二进制文件，在磁盘上，不占用系统资源。 进程，是活跃的（动态的）的程序，占用系统资源，在内存中执行。进程是分配系统资
+- title: Ubuntu18.04安装
+  path: /2020/05/13/linux/2020/ubuntu18.04-an-zhuang/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - 虚拟机
+  summary: WSL就是Windows Subsystem for Linux（Windows系统的Linux子系统），因为依赖于win10，所以“子系统”会受到一些限制。 使用方法： 打开控制面板 按照提示重启就好了，要是没有这个选项，就说明系
+- title: 每天一个linux终端命令ch命令(4)
+  path: /2020/05/13/linux/2020/mei-tian-yi-ge-linux-zhong-duan-ming-ling-ch-ming-ling-4/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux命令
+  summary: 好读书，不求甚解；每有会意，便欣然忘食。 ch命令指的是 chgrp,chown,chmod 这一组命令! 因为分开缺少连贯性,所以凑一起了。 chgrp 修改文件所属的用户组 chown 修改文件的拥有者 chmod 修改文件的属性
+- title: 每天一个linux终端命令ls命令(3)
+  path: /2020/05/13/linux/2020/mei-tian-yi-ge-linux-zhong-duan-ming-ling-ls-ming-ling-3/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux命令
+  summary: 凡心所向，素履可往 ls 即list,译为列举。 ls 可带参数,也可不带参数。可带的参数很多,这里只列举最常用的几种,有特殊需求可使用man或者–help命令进行参考。 man ls 或者 ls --help ls [-lha]
+    参数介绍
+- title: 每天一个linux终端命令man命令
+  path: /2020/05/13/linux/2020/mei-tian-yi-ge-linux-zhong-duan-ming-ling-man-ming-ling/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux命令
+  summary: 我不树敌,敌自树 shutdown 中文就是关机的意思。 由于linux的关机和重新启动操作是很重大的系统操作,所以一般只有 root ( 超级用户 )才能执行,不过在一些linux发行版中,我们可以使用sudo增加用户权限来执行这些需要
+- title: 利用masm工具和DOCBOX在win10上进行汇编
+  path: /2020/05/13/linux/2020/li-yong-masm-gong-ju-he-docbox-zai-win10-shang-jin-xing-hui-bian/
+  date: '2020-05-13'
+  year: '2020'
+  category: 汇编
+  tags:
+  - 博客
+  summary: windows XP直接用cmd就可以了，win10用户也可也在虚拟机上装个XP进行汇编！ 接下来介绍利用masm工具和DOCBOX在win10上进行汇编 1.DOCBOX下载地址MASM32下载地址 官网 网盘地址 链接：https://
+- title: 每天一个linux终端命令shutdown命令(2)
+  path: /2020/05/13/linux/2020/mei-tian-yi-ge-linux-zhong-duan-ming-ling-shutdown-ming-ling-2/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux命令
+  summary: 我不树敌,敌自树 shutdown中文就是关机的意思。 由于linux的关机和重新启动操作是很重大的系统操作,所以一般只有root(超级用户)才能执行,不过在一些linux发行版中,我们可以使用sudo增加用户权限来执行这些需要root身份
+- title: 虚拟机安装Tinyos
+  path: /2020/05/13/linux/2020/xu-ni-ji-an-zhuang-tinyos/
+  date: '2020-05-13'
+  year: '2020'
+  category: IOT
+  tags:
+  - TinyOS
+  summary: 讲在前面的话不建议大家用虚拟机ubuntu18.04LTS安装Tinyos，很多坑。 弄了好久，最后编译还各种无法解决的错误，还望各位不吝赐教！ Vmware下载 推荐系统Debain 准备环境1. 搭建java环境Ubuntu(Debia
+- title: 解决Ubuntu Navicat的一些问题(虚拟机)
+  path: /2020/05/13/linux/2020/jie-jue-ubuntu-navicat-de-yi-xie-wen-ti-xu-ni-ji/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - 虚拟机
+  summary: 先安装好MySQL sudo apt-get install mysql-server sudo apt-get install mysql-client sudo apt-get install libmysqlclient-dev
+- title: 解决WSL修改不了字体的方法
+  path: /2020/05/13/linux/2020/jie-jue-wsl-xiu-gai-bu-liao-zi-ti-de-fang-fa/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - WSL
+  summary: win+r 输入regedit 找到： 计算机\HKEY_CURRENT_USER\Console\C:_Program Files_WindowsApps_CanonicalGroupLimited.UbuntuonWindows_180
+- title: 解决centos使用sudo时出现“用户名 is not in the sudoers file. This incident will be reported.”的问题
+  path: /2020/05/13/linux/2020/jie-jue-centos-shi-yong-sudo-shi-chu-xian-yong-hu-ming-is-not-in-the-sudoers-file.this-incident-will-be-reported.de-wen-ti/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - 虚拟机
+  summary: 活在自然美景之中，人就懒，懒就善。 安装好Centos后，想通过终端安装点软件，总是提示用户权限不足，使用 sudo 提升权限的话，就会出现 用户名 is not in the sudoers file. This incident
+    wil
+- title: 给虚拟机的Ubuntu换阿里源
+  path: /2020/05/13/linux/2020/gei-xu-ni-ji-de-ubuntu-huan-a-li-yuan/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - 虚拟机
+  summary: 安装的Ubuntu安装东西速度实在是不敢恭维QAQ，因为是国外的网址。 所以我们要换成国内的源，然后就可以尽情飞越了。 首先我们还是要先备份下：sudo cp /etc/apt/sources.list /etc/apt/sources.
+- title: 虚拟机安装Ubuntu18.04
+  path: /2020/05/13/linux/2020/xu-ni-ji-an-zhuang-ubuntu18.04/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: Ubuntu19.04只有九个月的支持服务时间、可以去体验下。下载vmware workstation下载地址用这个密钥激活应该就可以了YG5H2-ANZ0H-M8ERY-TXZZZ-YKRV8下载Ubuntu18.04镜像文件链接：htt
+- title: Linux系统API
+  path: /2020/05/13/linux/2020/linux-xi-tong-api/
+  date: '2020-05-13'
+  year: '2020'
+  category: Linux
+  tags:
+  - Linux
+  summary: 讲在前面的话本文主要介绍几个主要的 linux 系统 API。 注：本文讲的简单，每个 API 举了一个例子，不适合深入学习，只适合忘记了某个函数来回顾下用法。 系统API 和 C语言库函数 区别： 简单的讲： C库函数
+    是由 API 封装
+- title: hdu1004(map解法)
+  path: /2020/05/12/hdu/2020/hdu1004-map-jie-fa/
+  date: '2020-05-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - Hash
+  summary: 'Let the Balloon RiseTime Limit: 2000/1000 MS (Java/Others) Memory Limit: 65536/32768 K (Java/Othe'
+- title: hdu2037今年暑假不AC
+  path: /2020/05/12/hdu/2020/hdu2037-jin-nian-shu-jia-bu-ac/
+  date: '2020-05-12'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 贪心
+  summary: '所谓贪心，只是人的一种本能反应 原题链接 #include <algorithm> #include <iostream> using std::cin; using std::cout; using std::endl;
+    /'
+- title: 反转单链表(非递归)
+  path: /2020/05/12/hdu/2020/fan-zhuan-dan-lian-biao-fei-di-gui/
+  date: '2020-05-12'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 链表
+  summary: The world has kissed my soul with its pain, asking for its return in songs. 链表定义： struct ListNode { int val;
+- title: 入门深搜(递归)
+  path: /2020/05/12/hdu/2020/ru-men-shen-sou-di-gui/
+  date: '2020-05-12'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 深度优先搜索遍历
+  summary: 所谓无底深渊，下去，也是前程万里 入门深搜，以hdu1241为例进行讲解！ 题目的意思大概是有一块油田，要你求有多少个不同的石油储藏（如果每个油袋是上下左右，对角相邻的，那么说这是一个石油储藏，*代表没有油袋，@代表有油袋）
+    典型的深搜算法
+- title: 取模运算(深层次理解)
+  path: /2020/05/12/hdu/2020/qu-mo-yun-suan-shen-ceng-ci-li-jie/
+  date: '2020-05-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数学
+  summary: 之前一直觉得自己了解取模取余运算，知道最近看了C++ Primer，有这么一句话， 当我们赋给无符号类型一个超过它表示范围的值时，结果是初始值对无符号类型表示数值总数取模后的余数 才发现自己学知识真的止于皮毛。 定义给定一个正整数p，任
+- title: 快慢指针找链表环入口
+  path: /2020/05/12/hdu/2020/kuai-man-zhi-zhen-zhao-lian-biao-huan-ru-kou/
+  date: '2020-05-12'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 链表
+  summary: 链表： struct ListNode { int val; struct ListNode *next; }; 快慢指针就是指指针每次移动的速度不一样，一般快指针每次移动两步，慢指针移动一步。 既然快慢指针移动的速度
+- title: 素数筛选法
+  path: /2020/05/12/hdu/2020/su-shu-shai-xuan-fa/
+  date: '2020-05-12'
+  year: '2020'
+  category: Leetcode
+  tags:
+  - 数学
+  summary: '朴素检测一般我们判断某个区间中的的素数，都是直接循环遍历，进行判断。 这样的话，时间复杂度就是 $O(n \sqrt{n})$ 代码如下: #include <cmath> #include <iostream> bool'
+- title: 辗转相除法和更相减损术
+  path: /2020/05/12/hdu/2020/zhan-zhuan-xiang-chu-fa-he-geng-xiang-jian-sun-zhu/
+  date: '2020-05-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数学
+  summary: '高中学过的求大公约数的方法就是辗转相除法和更相减损术了。 辗转相除法递归版 #include <iostream> using std::cin; using std::cout; using std::endl; int
+    gcd('
+- title: 快速幂
+  path: /2020/05/12/hdu/2020/kuai-su-mi/
+  date: '2020-05-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数学
+  summary: 一场梦，不怨也不恨，上了想象力的当。 快速幂，顾名思义，快速幂就是快速算底数的n次幂。其时间复杂度为 O(log₂n)， 与朴素的O(n)相比效率有了极大的提高。 讲白了，就是你知道了n的n次方，要你求n的2n次方，你还会循环2n次去求n的
+- title: 斯特林公式
+  path: /2020/05/12/hdu/2020/si-te-lin-gong-shi/
+  date: '2020-05-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数学
+  summary: '斯特林公式是用来估算阶乘的，n越大，结果越准确！ 斯特林公式： 或更精确的： 或： 或： ， 或： ， 如果要计算N后得到的数字为几位数，则我们可以知道其位数等于lgN！+1； 代码如下： #'
+- title: 牛顿迭代法
+  path: /2020/05/12/hdu/2020/niu-dun-die-dai-fa/
+  date: '2020-05-12'
+  year: '2020'
+  category: 博客
+  tags:
+  - 数学
+  summary: 牛顿迭代法（Newton’s method）又称为牛顿-拉夫逊（拉弗森）方法（Newton-Raphson method），它是牛顿在17世纪提出的一种在实数域和复数域上近似求解方程的方法。 当然，牛顿迭代法也是已知已知的实现求方根最快的方
+- title: C++二维vector使用
+  path: /2020/05/11/c/2020/c-er-wei-vector-shi-yong/
+  date: '2020-05-11'
+  year: '2020'
+  category: 博客
+  tags:
+  - C++
+  summary: 你再不来，我要下雪了。 记录下二维vector的遍历（输出） 注：二维vector的赋值不能跟二维数组一样用scanf或者cin写入 遍历（迭代器） 方法一 void print() { vector<vector<cha
+- title: 万能头包含的头文件
+  path: /2020/05/11/c/2020/wan-neng-tou-bao-han-de-tou-wen-jian/
+  date: '2020-05-11'
+  year: '2020'
+  category: 博客
+  tags:
+  - C++
+  summary: // C++ includes used for precompiling -*- C++ -*- // Copyright (C) 2003-2018 Free Software Foundation, Inc. //
+    // This
+- title: const int p 和 int const p
+  path: /2020/05/11/c/2020/const-int-p-he-int-const-p/
+  date: '2020-05-11'
+  year: '2020'
+  category: 博客
+  tags:
+  - C++
+  summary: 主要讲下这两者的区别及用法！高能区 const int* p 和 int const* p是完全等价的！const int* const p 和 int const const* p 是完全等价的！ 下面举几个例子来分析：
+    int x
+- title: 关于memset
+  path: /2020/05/11/c/2020/guan-yu-memset/
+  date: '2020-05-11'
+  year: '2020'
+  category: 博客
+  tags:
+  - C++
+  summary: '被不了解memset狠狠的坑了一把，难受。 对于整型数组，若要是初始化为非0的值时应该使用for循环，字符型或0，用memset即可。 例如： #include<bits/stdc++.h> int main() { int'
+- title: 各种二叉树（递归）
+  path: /2020/05/11/c/2020/ge-chong-er-cha-shu-di-gui/
+  date: '2020-05-11'
+  year: '2020'
+  category: 博客
+  tags:
+  - C++
+  summary: '为了方便粘贴，就没有放多文件编译。感谢leetcode的题库！要实现归并二叉树，自己要稍微更改下代码： #include<bits/stdc++.h> using std::cin; using std::cout; using
+    st'
+- title: 初学map的各种操作
+  path: /2020/05/11/c/2020/chu-xue-map-de-ge-chong-cao-zuo/
+  date: '2020-05-11'
+  year: '2020'
+  category: 博客
+  tags:
+  - C++
+  summary: '/* * @Author: incipe * @Date: 2019-09-22 23:14:53 * @LastEditTime: 2019-10-21 21:35:58 * @LastEditors: Please
+    set La'

@@ -1,0 +1,29 @@
+title: Wu Huachao
+description: Computer vision researcher and perception engineer working across visual learning, modern C++, and Linux systems.
+url: https://wavachao.github.io
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      nav: blog
+
+exclude:
+  - README.md
+  - content
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+

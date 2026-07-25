@@ -1,0 +1,74 @@
+# Edit this file to update the homepage. No HTML changes are required.
+name: Wu Huachao
+initials: WH
+role: Computer Vision Researcher & Perception Engineer
+location: Wuhan, China
+status: M.Sc. Computer Science
+focus: Visual learning · Perception systems · Modern C++
+
+hero:
+  eyebrow: Research / Engineering
+  title: Computer vision, from research questions to working systems.
+  introduction: >-
+    My work sits between computer vision research and production perception
+    systems—from reproducible experiments to dependable C++ software.
+
+about:
+  title: Research-minded. Engineering-grounded.
+  paragraphs:
+    - >-
+      I am a computer science master’s student focused on visual segmentation,
+      few-shot learning, and robust representations built on vision foundation
+      features.
+    - >-
+      I also work close to real perception pipelines, where synchronization,
+      configuration, replay, validation, and systems constraints matter as much
+      as model accuracy.
+
+disciplines:
+  - label: Research
+    title: Visual learning
+    text: Few-shot segmentation, domain generalization, foundation features, and disciplined experimental analysis.
+  - label: Engineering
+    title: Perception systems
+    text: Pipeline integration, sensor-data handling, replay validation, and cross-platform adaptation.
+  - label: Systems
+    title: C++ & Linux
+    text: Modern C++, networking, observability, performance diagnosis, and reliable developer tooling.
+
+projects:
+  - type: Research · Computer Vision
+    title: SegmentGDA
+    description: >-
+      Training-free few-shot segmentation through Gaussian discriminant
+      analysis over vision foundation features.
+    stack: Python · Vision Foundation Models · Segmentation
+    url: https://github.com/wavachao/SegmentGDA
+  - type: Research · 3D Vision
+    title: PointGMDA
+    description: >-
+      Multimodal 3D few-shot classification using Gaussian mixture
+      discriminant analysis.
+    stack: Python · 3D Vision · Multimodal Learning
+    url: https://github.com/wavachao/PointGMDA
+  - type: Engineering · Perception
+    title: Automotive Perception
+    description: >-
+      Engineering work around image synchronization, perception pipelines,
+      configuration migration, platform adaptation, and replay-based validation.
+    stack: C++ · Linux · Perception Pipelines
+  - type: Systems · Open Source
+    title: Systems Lab
+    description: >-
+      Small, inspectable systems projects exploring RPC, high-performance
+      networking, terminal interfaces, and developer infrastructure.
+    stack: C++ · DPDK · RPC · eBPF
+    url: https://github.com/wavachao?tab=repositories
+
+links:
+  - label: GitHub
+    url: https://github.com/wavachao
+  - label: Blog
+    url: /blog/
+  - label: RSS
+    url: /atom.xml

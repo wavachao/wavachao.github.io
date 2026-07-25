@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="site-shell footer-grid">
+    <div>
+      <p class="footer-name">{{ site.data.profile.name }}</p>
+      <p class="footer-note">Vision research, perception engineering, and systems notes.</p>
+    </div>
+
+    <div class="footer-links" aria-label="Footer links">
+      {% for link in site.data.profile.links %}
+        <a href="{{ link.url }}"{% if link.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>
+          {{ link.label }}{% if link.url contains "http" %} ↗{% endif %}
+        </a>
+      {% endfor %}
+    </div>
+
+    <p class="footer-copy">© {{ "now" | date: "%Y" }}</p>
+  </div>
+</footer>
+
