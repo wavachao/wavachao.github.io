@@ -1,7 +1,19 @@
 <header class="site-header">
   <div class="site-shell header-inner">
     <a class="brand" href="/" aria-label="Wu Huachao — home">
-      <img class="brand-mark" src="/favicon.svg?v=hc-20260726" width="35" height="35" alt="">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" focusable="false">
+          <path d="M48.5 14.5A23.5 23.5 0 1 0 48.5 49.5"
+                fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round"/>
+          <text x="20" y="43"
+                fill="currentColor"
+                font-family="Newsreader, Georgia, 'Times New Roman', serif"
+                font-size="31" font-style="italic" font-weight="500">H</text>
+          <path class="brand-mark-accent" d="M49.5 13.5l5-4"
+                fill="none" stroke-width="2.8" stroke-linecap="round"/>
+        </svg>
+      </span>
       <span class="brand-name">{{ site.data.profile.name }}</span>
     </a>
 
