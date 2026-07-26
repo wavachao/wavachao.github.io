@@ -83,13 +83,30 @@ description: Notes on computer vision, C++, Linux, embedded systems, and the eng
       <h2>Browse by subject.</h2>
     </div>
     <div class="topic-links cjk-supported">
-      {% for topic in site.data.legacy_topics.categories %}
-        <a href="/archives/?q={{ topic.name | url_encode }}">
-          <span>{{ topic.name }}</span>
-          <small>{{ topic.count }}</small>
+      {% capture new_category_tokens %}|{% for category in site.categories %}{{ category[0] }}|{% endfor %}{% endcapture %}
+      {% for category in site.categories %}
+        {% assign category_name = category[0] %}
+        {% assign category_count = category[1].size %}
+        {% for legacy_topic in site.data.legacy_topics.categories %}
+          {% if legacy_topic.name == category_name %}
+            {% assign category_count = category_count | plus: legacy_topic.count %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        <a href="/archives/?q={{ category_name | url_encode }}">
+          <span>{{ category_name }}</span>
+          <small>{{ category_count }}</small>
         </a>
+      {% endfor %}
+      {% for topic in site.data.legacy_topics.categories %}
+        {% capture topic_token %}|{{ topic.name }}|{% endcapture %}
+        {% unless new_category_tokens contains topic_token %}
+          <a href="/archives/?q={{ topic.name | url_encode }}">
+            <span>{{ topic.name }}</span>
+            <small>{{ topic.count }}</small>
+          </a>
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
 </section>
-

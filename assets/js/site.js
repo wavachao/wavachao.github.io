@@ -86,4 +86,53 @@
       replaceBrokenImage(image);
     }
   });
+
+  var mermaidBlocks = Array.prototype.slice.call(
+    document.querySelectorAll(
+      ".article-body pre > code.language-mermaid, " +
+      ".article-body .language-mermaid pre > code, " +
+      ".article-body pre.language-mermaid > code"
+    )
+  );
+
+  if (mermaidBlocks.length) {
+    var mermaidNodes = mermaidBlocks.map(function (code) {
+      var source = code.textContent;
+      var container =
+        code.closest(".highlighter-rouge.language-mermaid") ||
+        code.closest("pre.language-mermaid") ||
+        code.parentElement;
+      var diagram = document.createElement("pre");
+      diagram.className = "mermaid";
+      diagram.textContent = source;
+      container.replaceWith(diagram);
+      return diagram;
+    });
+
+    import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs")
+      .then(function (module) {
+        var mermaid = module.default;
+        mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: "strict",
+          theme: "dark",
+          fontFamily: "Manrope, LXGW WenKai Mono, sans-serif",
+          themeVariables: {
+            background: "#181a17",
+            primaryColor: "#252722",
+            primaryTextColor: "#f3efe5",
+            primaryBorderColor: "#ee7558",
+            lineColor: "#aeb1a8",
+            secondaryColor: "#20221f",
+            tertiaryColor: "#2b2d29"
+          }
+        });
+        return mermaid.run({ nodes: mermaidNodes });
+      })
+      .catch(function () {
+        mermaidNodes.forEach(function (node) {
+          node.classList.add("mermaid-fallback");
+        });
+      });
+  }
 }());

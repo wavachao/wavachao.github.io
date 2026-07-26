@@ -14,9 +14,26 @@ description: Browse the writing archive by tag.
 </header>
 
 <section class="tag-cloud site-shell cjk-supported">
-  {% for topic in site.data.legacy_topics.tags %}
-    <a href="/archives/?q={{ topic.name | url_encode }}">
-      {{ topic.name }} <span>{{ topic.count }}</span>
+  {% capture new_tag_tokens %}|{% for tag in site.tags %}{{ tag[0] }}|{% endfor %}{% endcapture %}
+  {% for tag in site.tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign tag_count = tag[1].size %}
+    {% for legacy_topic in site.data.legacy_topics.tags %}
+      {% if legacy_topic.name == tag_name %}
+        {% assign tag_count = tag_count | plus: legacy_topic.count %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    <a href="/archives/?q={{ tag_name | url_encode }}">
+      {{ tag_name }} <span>{{ tag_count }}</span>
     </a>
+  {% endfor %}
+  {% for topic in site.data.legacy_topics.tags %}
+    {% capture topic_token %}|{{ topic.name }}|{% endcapture %}
+    {% unless new_tag_tokens contains topic_token %}
+      <a href="/archives/?q={{ topic.name | url_encode }}">
+        {{ topic.name }} <span>{{ topic.count }}</span>
+      </a>
+    {% endunless %}
   {% endfor %}
 </section>

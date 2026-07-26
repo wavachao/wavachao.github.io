@@ -14,12 +14,35 @@ description: Browse the writing archive by category.
 </header>
 
 <section class="topic-directory site-shell cjk-supported">
-  {% for topic in site.data.legacy_topics.categories %}
-    <a href="/archives/?q={{ topic.name | url_encode }}">
-      <span>0{{ forloop.index }}</span>
-      <h2>{{ topic.name }}</h2>
-      <p>{{ topic.count }} notes</p>
+  {% assign topic_number = 0 %}
+  {% capture new_category_tokens %}|{% for category in site.categories %}{{ category[0] }}|{% endfor %}{% endcapture %}
+  {% for category in site.categories %}
+    {% assign topic_number = topic_number | plus: 1 %}
+    {% assign category_name = category[0] %}
+    {% assign category_count = category[1].size %}
+    {% for legacy_topic in site.data.legacy_topics.categories %}
+      {% if legacy_topic.name == category_name %}
+        {% assign category_count = category_count | plus: legacy_topic.count %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    <a href="/archives/?q={{ category_name | url_encode }}">
+      <span>{% if topic_number < 10 %}0{% endif %}{{ topic_number }}</span>
+      <h2>{{ category_name }}</h2>
+      <p>{{ category_count }} notes</p>
       <i>→</i>
     </a>
+  {% endfor %}
+  {% for topic in site.data.legacy_topics.categories %}
+    {% capture topic_token %}|{{ topic.name }}|{% endcapture %}
+    {% unless new_category_tokens contains topic_token %}
+      {% assign topic_number = topic_number | plus: 1 %}
+      <a href="/archives/?q={{ topic.name | url_encode }}">
+        <span>{% if topic_number < 10 %}0{% endif %}{{ topic_number }}</span>
+        <h2>{{ topic.name }}</h2>
+        <p>{{ topic.count }} notes</p>
+        <i>→</i>
+      </a>
+    {% endunless %}
   {% endfor %}
 </section>

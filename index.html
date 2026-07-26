@@ -119,8 +119,9 @@ description: Wu Huachao is a computer vision researcher and software engineer wo
       </p>
 
       <dl class="writing-facts">
-        <div><dt>Archive</dt><dd>{{ site.data.legacy_posts | size }} entries</dd></div>
-        <div><dt>Range</dt><dd>2020—2021</dd></div>
+        {% assign total_notes = site.posts.size | plus: site.data.legacy_posts.size %}
+        <div><dt>Archive</dt><dd>{{ total_notes }} entries</dd></div>
+        <div><dt>Range</dt><dd>2020—{{ "now" | date: "%Y" }}</dd></div>
         <div><dt>Subjects</dt><dd>CV · Go · C++</dd></div>
       </dl>
 

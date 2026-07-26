@@ -43,5 +43,21 @@
 
   {% include site-footer.html %}
   <script src="/assets/js/site.js" defer></script>
+  {% if page.layout == "post" or page.math %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: { "[+]": [["$", "$"]] },
+          processEscapes: true,
+          tags: "ams"
+        },
+        chtml: {
+          displayAlign: "center",
+          displayIndent: "0"
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+  {% endif %}
 </body>
 </html>
