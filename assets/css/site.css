@@ -147,8 +147,6 @@ input {
   display: block;
   width: 35px;
   height: 35px;
-  border-radius: 8px;
-  box-shadow: 0 0 0 1px var(--line);
 }
 
 .brand-name {
@@ -243,31 +241,30 @@ html[data-theme="dark"] .theme-glyph {
 
 .home-hero {
   display: grid;
-  min-height: 640px;
   grid-template-columns: minmax(0, 1.35fr) minmax(270px, 0.65fr);
-  align-items: center;
+  align-items: start;
   gap: clamp(58px, 8vw, 112px);
   border-bottom: 1px solid var(--line-strong);
-  padding-top: 66px;
-  padding-bottom: 66px;
+  padding-top: 92px;
+  padding-bottom: 82px;
 }
 
 .hero-copy h1 {
-  max-width: 780px;
+  max-width: 700px;
   margin: 23px 0 0;
   font-family: var(--display);
-  font-size: clamp(61px, 7.2vw, 104px);
+  font-size: clamp(58px, 6.4vw, 88px);
   font-weight: 400;
   letter-spacing: -0.052em;
-  line-height: 0.97;
+  line-height: 0.99;
 }
 
 .hero-introduction {
-  max-width: 680px;
-  margin: 38px 0 0;
+  max-width: 570px;
+  margin: 30px 0 0;
   color: var(--muted);
   font-family: var(--display);
-  font-size: clamp(21px, 2vw, 28px);
+  font-size: clamp(19px, 1.7vw, 23px);
   line-height: 1.5;
 }
 

@@ -4,15 +4,13 @@ initials: HC
 role: Computer Vision Researcher & Software Engineer
 location: Wuhan, China
 status: M.Sc. Computer Science
-focus: Visual learning · Go backends · C++ systems
+focus: Computer Vision · C/C++ Systems · Go Backend
 
 hero:
   eyebrow: Research / Engineering
-  title: Computer vision, from research questions to working systems.
+  title: Computer vision, from models to software.
   introduction: >-
-    My work spans computer vision research and software engineering—from
-    reproducible visual-learning experiments to Go services and modern C++
-    systems.
+    I work on visual learning, C/C++ systems on Linux, and Go backend services.
 
 about:
   title: Research-minded. Engineering-grounded.
@@ -52,13 +50,13 @@ projects:
       discriminant analysis.
     stack: Python · 3D Vision · Multimodal Learning
     url: https://github.com/wavachao/PointGMDA
-  - type: Backend · AI Workflow
-    title: OpenStory
+  - type: Backend · Go
+    title: Shortener
     description: >-
-      A self-hosted workflow platform that turns an idea into scripts,
-      characters, storyboards, media assets, and short preview videos.
-    stack: Go · Workflow Orchestration · Self-hosting
-    url: https://github.com/wavachao/OpenStory
+      A focused Go project for generating short links and resolving them back
+      to their original destinations.
+    stack: Go · HTTP APIs · Backend Services
+    url: https://github.com/wavachao/shortener
   - type: Backend · Microservices
     title: Review Service
     description: >-
@@ -66,13 +64,13 @@ projects:
       with separate API and service repositories.
     stack: Go · Kratos · Protobuf · Microservices
     url: https://github.com/wavachao/review-service
-  - type: Systems · Networking
-    title: DPDK Usage
+  - type: Systems · Modern C++
+    title: fuibase
     description: >-
-      Hands-on experiments that explain DPDK fundamentals and compare
-      polling-mode packet processing with traditional interrupt-driven I/O.
-    stack: C++ · DPDK · Linux · Performance
-    url: https://github.com/wavachao/DPDK-usage
+      A foundational terminal UI framework built with modern C++ for composing
+      structured command-line interfaces.
+    stack: C++ · TUI · Linux
+    url: https://github.com/wavachao/fuibase
   - type: Developer Tooling · C++
     title: dotrix
     description: >-
