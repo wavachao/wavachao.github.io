@@ -7,11 +7,24 @@ status: M.Sc. Computer Science
 focus: Computer Vision · C/C++ Systems · Go Backend
 
 hero:
-  eyebrow: Wu Huachao / Portfolio
-  title: Computer Vision
-  subtitle: Research & Software Engineering
+  eyebrow: M.Sc. Computer Science · Wuhan, China
+  title: Wu Huachao
+  subtitle: Computer Vision Researcher & Software Engineer
   introduction: >-
-    I work on visual learning, C/C++ systems on Linux, and Go backend services.
+    I study few-shot segmentation, domain generalization, and visual
+    representations built on foundation-model features. Alongside research, I
+    build C/C++ systems on Linux and backend services in Go.
+
+snapshot:
+  title: Current direction
+  subtitle: Research and engineering profile
+  items:
+    - label: Research
+      value: Few-shot segmentation · domain generalization
+    - label: Systems
+      value: C/C++ · Linux · networking
+    - label: Backend
+      value: Go services · APIs · RPC
 
 about:
   title: Research-minded. Engineering-grounded.

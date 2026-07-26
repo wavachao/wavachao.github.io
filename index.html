@@ -27,12 +27,12 @@ description: Wu Huachao is a computer vision researcher and software engineer wo
       <img src="/medias/avatar.png" width="636" height="636" alt="{{ profile.name }}">
       <span>Profile / {{ "now" | date: "%Y" }}</span>
     </div>
-    <h2>{{ profile.name }}</h2>
-    <p>{{ profile.role }}</p>
+    <h2>{{ profile.snapshot.title }}</h2>
+    <p>{{ profile.snapshot.subtitle }}</p>
     <dl>
-      <div><dt>Status</dt><dd>{{ profile.status }}</dd></div>
-      <div><dt>Based in</dt><dd>{{ profile.location }}</dd></div>
-      <div><dt>Focus</dt><dd>{{ profile.focus }}</dd></div>
+      {% for item in profile.snapshot.items %}
+        <div><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd></div>
+      {% endfor %}
     </dl>
   </aside>
 </section>

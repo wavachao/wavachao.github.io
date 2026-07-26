@@ -253,31 +253,31 @@ html[data-theme="dark"] .theme-glyph {
   max-width: 650px;
   margin: 28px 0 0;
   font-family: var(--display);
-  font-size: clamp(59px, 6.2vw, 84px);
+  font-size: clamp(64px, 6.6vw, 92px);
   font-weight: 500;
   letter-spacing: -0.045em;
-  line-height: 0.94;
+  line-height: 0.98;
 }
 
 .hero-copy h1 span {
   display: block;
-  margin-top: 24px;
-  color: var(--muted);
+  max-width: 620px;
+  margin-top: 22px;
+  color: var(--ink);
   font-family: var(--sans);
-  font-size: clamp(15px, 1.45vw, 19px);
+  font-size: clamp(17px, 1.65vw, 21px);
   font-weight: 600;
-  letter-spacing: 0.055em;
-  line-height: 1.35;
-  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 1.45;
 }
 
 .hero-introduction {
-  max-width: 520px;
+  max-width: 600px;
   margin: 31px 0 0;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: clamp(16px, 1.45vw, 18px);
-  line-height: 1.75;
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.8;
 }
 
 .hero-links {
@@ -1502,12 +1502,12 @@ a.project-card:hover {
   }
 
   .hero-copy h1 {
-    font-size: clamp(51px, 15vw, 68px);
+    font-size: clamp(54px, 15.5vw, 70px);
   }
 
   .hero-copy h1 span {
     margin-top: 19px;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .hero-introduction {
