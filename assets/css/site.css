@@ -241,31 +241,43 @@ html[data-theme="dark"] .theme-glyph {
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(270px, 0.65fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(310px, 0.88fr);
   align-items: start;
-  gap: clamp(58px, 8vw, 112px);
+  gap: clamp(70px, 9vw, 130px);
   border-bottom: 1px solid var(--line-strong);
-  padding-top: 92px;
-  padding-bottom: 82px;
+  padding-top: 88px;
+  padding-bottom: 86px;
 }
 
 .hero-copy h1 {
-  max-width: 700px;
-  margin: 23px 0 0;
+  max-width: 650px;
+  margin: 28px 0 0;
   font-family: var(--display);
-  font-size: clamp(58px, 6.4vw, 88px);
-  font-weight: 400;
-  letter-spacing: -0.052em;
-  line-height: 0.99;
+  font-size: clamp(59px, 6.2vw, 84px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+}
+
+.hero-copy h1 span {
+  display: block;
+  margin-top: 24px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.45vw, 19px);
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .hero-introduction {
-  max-width: 570px;
-  margin: 30px 0 0;
+  max-width: 520px;
+  margin: 31px 0 0;
   color: var(--muted);
-  font-family: var(--display);
-  font-size: clamp(19px, 1.7vw, 23px);
-  line-height: 1.5;
+  font-family: var(--sans);
+  font-size: clamp(16px, 1.45vw, 18px);
+  line-height: 1.75;
 }
 
 .hero-links {
@@ -303,10 +315,13 @@ html[data-theme="dark"] .theme-glyph {
 }
 
 .profile-card {
+  width: 100%;
+  max-width: 360px;
+  justify-self: end;
   border: 1px solid var(--line-strong);
   border-top: 3px solid var(--accent);
   background: var(--surface);
-  padding: 22px;
+  padding: 25px;
 }
 
 .profile-card-head {
@@ -1487,12 +1502,17 @@ a.project-card:hover {
   }
 
   .hero-copy h1 {
-    font-size: clamp(55px, 16.5vw, 76px);
+    font-size: clamp(51px, 15vw, 68px);
+  }
+
+  .hero-copy h1 span {
+    margin-top: 19px;
+    font-size: 14px;
   }
 
   .hero-introduction {
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 26px;
+    font-size: 16px;
   }
 
   .hero-links {
