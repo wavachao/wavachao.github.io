@@ -3,19 +3,19 @@ layout: page
 title: About
 kicker: Profile / Background
 nav: about
-description: Computer vision research, perception engineering, and systems practice.
+description: Computer vision research, Go backend development, and C++ systems practice.
 ---
 
 ## What I work on
 
 I am a computer science master’s student working across **computer vision
-research** and **perception engineering**. My research interests include visual
+research** and **software engineering**. My research interests include visual
 segmentation, few-shot learning, domain generalization, and representation
 analysis with vision foundation models.
 
-Alongside research, I care about the engineering path from an idea to a system
-that can be inspected and trusted: data synchronization, configuration,
-cross-platform integration, replay, validation, and performance diagnosis.
+Alongside research, I build backend services and systems tools in Go and modern
+C++. I care about clear APIs, inspectable components, networking, observability,
+and measured performance.
 
 ## How I work
 
@@ -29,11 +29,14 @@ cross-platform integration, replay, validation, and performance diagnosis.
 **Vision:** PyTorch, segmentation, few-shot learning, visual foundation
 features, experiment design and analysis.
 
-**Engineering:** Modern C++, Linux, perception pipelines, networking,
-observability, replay and validation.
+**Backend:** Go, API design, RPC, Protobuf, service composition and self-hosted
+applications.
 
-**Tools:** Git, CMake, Python, shell tooling, performance and systems
-diagnostics.
+**Systems:** Modern C++, Linux, networking, DPDK, eBPF, developer tooling and
+performance diagnosis.
+
+**Tools:** Git, CMake, Python, shell tooling and reproducible development
+environments.
 
 For code and current experiments, visit
 [GitHub](https://github.com/wavachao).

@@ -1,5 +1,5 @@
 title: Wu Huachao
-description: Computer vision researcher and perception engineer working across visual learning, modern C++, and Linux systems.
+description: Computer vision researcher and software engineer working across visual learning, Go backend development, modern C++, and Linux systems.
 url: https://wavachao.github.io
 baseurl: ""
 lang: en
@@ -26,4 +26,3 @@ exclude:
   - scripts
   - Gemfile
   - Gemfile.lock
-
